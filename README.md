@@ -31,8 +31,6 @@ LINK DO PROTOTIPO ![clique aqui](https://github.com/controlederotas/trab01/blob/
 
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
 > A Controle de Rotas precisa inicialmente dos seguintes relatórios:
 * Relatório informando dados do usuário.
@@ -43,7 +41,7 @@ LINK DO PROTOTIPO ![clique aqui](https://github.com/controlederotas/trab01/blob/
  
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
-> A tabela macro contem algun dos itens que identificamos até agora, como é uma tabela incial pode ser que tenha falta de muitos campos e afins, mas para efeito de comparação essa é a tabela incial e o que entendemos dela.
+> A tabela macro contem algum dos itens que identificamos até agora, como é uma tabela incial pode ser que tenha falta de muitos campos e afins, mas para efeito de comparação essa é a tabela incial e o que entendemos dela.
     
 ![Exemplo de Tabela de dados controle de rotas](https://github.com/controlederotas/trab01/blob/master/arquivos/tabelaControleDeRotas.xlsx?raw=true "Tabela - Controle de rotas")
     
