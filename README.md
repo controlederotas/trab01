@@ -28,7 +28,7 @@ Neste ponto a codificação não e necessária, somente as ideias de telas devem
 
 ![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom]
-(https://github.com/controlederotas/trab01/blob/master/arquivos/Controle%20de%20rotas%20(3).pdf))
+(https://github.com/controlederotas/trab01/blob/master/arquivos/Controle%20de%20rotas%20(3).pdf?raw=true "Title"))
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
