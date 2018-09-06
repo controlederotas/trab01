@@ -43,7 +43,7 @@ LINK DO PROTOTIPO ![clique aqui](https://github.com/controlederotas/trab01/blob/
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 > A tabela macro contem algum dos itens que identificamos até agora, como é uma tabela incial pode ser que tenha falta de muitos campos e afins, mas para efeito de comparação essa é a tabela incial e o que entendemos dela.
     
-![Exemplo de Tabela de dados controle de rotas](https://github.com/controlederotas/trab01/blob/master/arquivos/tabelaControleDeRotas.xlsx?raw=true "Tabela - Controle de rotas")
+![Tabela de dados controle de rotas](https://github.com/controlederotas/trab01/blob/master/arquivos/tabelaControleDeRotas.xlsx?raw=true "Tabela - Controle de rotas")
     
 >## Marco de Entrega 01 em: (30/08/2018)<br>
 
