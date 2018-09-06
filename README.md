@@ -27,7 +27,7 @@ Este é um prototipo das telas to sistema, um rascunho apenas, o mesmo pode sofr
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
 ![Prototipo Balsamic]
-![Alt text](https://github.com/discipbd1/trab01/blob/master/arquivos/Controle%20de%20rotas%20(3).pdf?raw=true "PROTOTIPO ")
+![Alt text](https://github.com/controlederotas/trab01/blob/master/arquivos/Controle%20de%20rotas%20(3).pdf?raw=true "PROTOTIPO ")
     
 
 
