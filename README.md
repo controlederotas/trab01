@@ -48,7 +48,7 @@ LINK DO PROTOTIPO ![clique aqui](https://github.com/controlederotas/trab01/blob/
     e deve ser criada antes do modelo conceitual
     c) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
     
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discipbd1/trab01/blob/master/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+![Exemplo de Tabela de dados controle de rotas](https://github.com/controle de rotas/trab01/blob/master/arquivos/tabelaControleDeRotas.xlsx?raw=true "Tabela - Controle de rotas")
     
 >## Marco de Entrega 01 em: (30/08/2018)<br>
 
