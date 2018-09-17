@@ -55,6 +55,12 @@ A tabela macro contem algum dos itens que identificamos até agora, como é uma 
 
 #### 5.2 DECISÕES DE PROJETO
 
+a) Traçar rotas : Inicialmente, nosso projeto visava traçar a melhor rota com base no índice de criminalidade do ponto de saída da mercadoria ao ponto de seu ponto de chegada com base no índice de criminalidade em certos pontos desta rota. Junto ao professor e, dada a dificuldade encontrada para implementar o sistema que calculasse a melhor rota, decidimos que o sistema passaria a indicar pontos de maior e menor risco para o condutor, retirando a funcionalidade de cálculo de rotas.
+
+b) Incluir Boletim de Ocorrência : Consideramos que uma forma dinâmica de manter nosso banco sempre atualizado seria dar ao usuário a possibilidade de registrar assaltos sofridos.
+
+
+
 a) Tabela Usuario: essa tabela armazena alguns dados das pessoas que registram o boletim por meio do sistema. 
 
 b) Tabela Boletim: essa tabela armazena os dados referente aos boletins retirados da SESP, e as informações geradas por usuarios 
