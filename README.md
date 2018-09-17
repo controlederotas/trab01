@@ -50,7 +50,7 @@ A tabela macro contem algum dos itens que identificamos até agora, como é uma 
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
         
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/mod_conceitualBD.png)
+![Alt text](https://raw.githubusercontent.com/controlederotas/trab01/master/images/mod_conceitualBD.png)
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
