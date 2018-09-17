@@ -29,7 +29,7 @@ LINK DO PROTOTIPO ![clique aqui](https://github.com/controlederotas/trab01/blob/
 
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     
-> A Controle de Rotas precisa inicialmente dos seguintes relatórios:
+A Controle de Rotas precisa inicialmente dos seguintes relatórios:
 * Relatório informando dados do usuário.
 * Relatório com registros dos pontos onde os usuários foram assaltados..
 * Relatório com bairros de alto nível de periculosidade e hora do dia com maior índice de roubo.
@@ -38,7 +38,7 @@ LINK DO PROTOTIPO ![clique aqui](https://github.com/controlederotas/trab01/blob/
  
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
-> A tabela macro contem algum dos itens que identificamos até agora, como é uma tabela incial pode ser que tenha falta de muitos campos e afins, mas para efeito de comparação essa é a tabela incial e o que entendemos dela.
+A tabela macro contem algum dos itens que identificamos até agora, como é uma tabela incial pode ser que tenha falta de muitos campos e afins, mas para efeito de comparação essa é a tabela incial e o que entendemos dela.
     
 ![Tabela de dados controle de rotas](https://github.com/controlederotas/trab01/blob/master/arquivos/tabelaControleDeRotas.xlsx?raw=true "Tabela - Controle de rotas")
     
