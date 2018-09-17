@@ -56,10 +56,12 @@ A tabela macro contem algum dos itens que identificamos até agora, como é uma 
 #### 5.2 DECISÕES DE PROJETO
 
     a) Tabela Usuario: essa tabela armazena alguns dados das pessoas que registram o boletim por meio do sistema. 
-    b) Tabela Boletim: essa tabela armazena os dados referente aos boletins retirados da SESP, e as informações geradas por usuarios que sofreram algum tipo de "furto/roubo".
+    b) Tabela Boletim: essa tabela armazena os dados referente aos boletins retirados da SESP, e as informações geradas por usuarios 
+    que sofreram algum tipo de "furto/roubo".
     c) Tabelas Endereço, Município, Bairro: optamos em quebrar a tabela "ENDEREÇOS" em sub tabelas pois, podem existir endereços e bairros com o mesmo nome em municípios diferentes.
     d) Tabela Clientes: Essa tabela armazena dados de senha e ids dos usuarios que contratam o serviço de controle de rotas.
-    e) Tabela Origem_Entrega/ Destino_Entrega: são as tabelas que armazenam a origem e o destino do serviço de entrega, esse campo esta atrelado ao usuario pois o mesmo nos fornece essa informação.
+    e) Tabela Origem_Entrega/ Destino_Entrega: são as tabelas que armazenam a origem e o destino do serviço de entrega, esse 
+    campo esta atrelado ao usuario pois o mesmo nos fornece essa informação.
 
 >## Marco de Entrega 02 em: (13/09/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
