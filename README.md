@@ -17,7 +17,7 @@ A empresa Controle de Rotas tem como foco principal encontrar e apontar locais c
 
 ### 3.MINI-MUNDO Novo<br>
 
-O sistema proposto para a Controle de Rotas conterá as seguintes informações. Primeiramente o sistema precisa receber o local de origem e destino da entrega da mercadoria. Os dados armazenados referentes à essa etapa serão hora de saída do local de entrega, cep, rua, número, bairro e estado de cada uma das localidades. A proposta do sistema é conseguir mostrar os pontos mais violentos de determinada área. Essa área nada mais é que a região pertencente à origem e ao destino. Para exibir esses pontos o sistema precisa ter acesso ao mapa da região e também ao índice de assaltos recorrentes correspondente àquela área. O mapa da região é composto por ruas. Os índices de assaltos são representados pela quantidade de registros de boletins de ocorrência para àquela localidade, juntamente com a data e hora de cada ocorrência. É possível também o usuário contribuir com o sistema informando no site da empresa as ocorrências de roubo/furto. Para registrar a ocorrência o usuário precisa fazer um login com e-mail e senha. Depois é preciso informar a cidade que aconteceu a ocorrência, o tipo de roubo, o tipo de item furtado, o sexo e a data e hora. Por meio de toda essa avaliação o sistema consegue mostrar ao usuário os pontos mais violentos desse percurso para que assim ele possa evitá-los.
+O sistema proposto para a Controle de Rotas conterá as seguintes informações. Primeiramente o sistema precisa receber o local de origem e destino da entrega da mercadoria. Os dados armazenados referentes à essa etapa serão hora de saída do local de entrega, cep, rua, número, bairro e estado de cada uma das localidades. A proposta do sistema é conseguir mostrar os pontos mais violentos de determinada área. Essa área nada mais é que a região pertencente à origem e ao destino. Para exibir esses pontos, o sistema precisa ter acesso ao mapa da região e também ao índice de assaltos recorrentes correspondente àquela área. O mapa da região é composto por ruas. Os índices de assaltos são representados pela quantidade de registros de boletins de ocorrência para àquela localidade, juntamente com a data e hora de cada ocorrência. É possível também o usuário contribuir com o sistema informando no site da empresa as ocorrências de roubo/furto. Para registrar a ocorrência o usuário precisa fazer um login com e-mail e senha. Depois é preciso informar a cidade que aconteceu a ocorrência, o tipo de roubo, o tipo de item furtado, o sexo e a data e hora. Por meio de toda essa avaliação o sistema consegue mostrar ao usuário os pontos mais violentos desse percurso para que assim ele possa evitá-los.
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Este é um prototipo das telas to sistema, um rascunho apenas, o mesmo pode sofrer alterações no decorrer do trabalho, todos os arquivos foram feitos com a ferramenta balsamic.
@@ -50,14 +50,18 @@ A tabela macro contem algum dos itens que identificamos até agora, como é uma 
         
     
 #### 5.1 Validação do Modelo Conceitual
-    carroBD: Harrison Sanches, Matheus Comério, Luciano Ananias, João Augusto
+    [Grupo01]: [Nomes dos que participaram na avaliação]
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 DECISÕES DE PROJETO
 
 a) Traçar rotas : Inicialmente, nosso projeto visava traçar a melhor rota com base no índice de criminalidade do ponto de saída da mercadoria ao ponto de seu ponto de chegada com base no índice de criminalidade em certos pontos desta rota. Junto ao professor e, dada a dificuldade encontrada para implementar o sistema que calculasse a melhor rota, decidimos que o sistema passaria a indicar pontos de maior e menor risco para o condutor, retirando a funcionalidade de cálculo de rotas.
 
-b) Incluir Boletim de Ocorrência : Consideramos que uma forma dinâmica de manter nosso banco sempre atualizado seria dar ao usuário a possibilidade de registrar assaltos sofridos.
+b) Incluir boletim de ocorrência : Consideramos que uma forma dinâmica de manter nosso banco sempre atualizado seria dar ao usuário a possibilidade de registrar assaltos sofridos.
+
+c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de dados vindo de diversas fontes abertas e confiáveis. Estas fontes alimentarão nosso banco e servirão de base para nosso banco de dados. Utilizaremos ferramentas já conhecidas para extrair estes dados. 
+
+
 
 
 >## Marco de Entrega 02 em: (13/09/2018)<br>
