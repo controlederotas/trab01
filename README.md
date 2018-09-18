@@ -50,8 +50,8 @@ A tabela macro contem algum dos itens que identificamos até agora, como é uma 
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    carroBD: Harrison Sanches, Matheus COmério, Luciano Ananias, Joao Augusto
+    qr-bus: Ewerson Vieira, Giuliano de Paulo, Lorran Gabriel, Marcos Antônio
 
 #### 5.2 DECISÕES DE PROJETO
 
