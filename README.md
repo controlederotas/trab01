@@ -183,8 +183,89 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico 
-        b) formato .SQL
+INSERT INTO usuario 
+VALUES (194538, 'patricia.lima@hotmail.com', 'F'),
+(785632, 'luciana_almeida@hotmail.com', 'F'),
+(198500, 'pablorodrigues@gmail.com', 'M'),
+(987438, 'rodrigoxavier12@bol.com', 'M'),
+(693238, 'jose_almeida@hotmail.com', 'M'),
+(794133, 'guilherme.souza@gmail.com', 'M'),
+(824530, 'analopez@hotmail.com', 'F'),
+(634538, 'ada.lima@gmail.com', 'F'),
+(621548, 'filipebarcelos@hotmail.com', 'M'),
+(845538, 'luana_aragao@gmail.com', 'F');
+
+INSERT INTO municipio 
+VALUES (532066, 'Cariacica'),
+(530066, 'Viana'),
+(532666, 'Vila Velha'),
+(532000, 'Santa Tereza'),
+(100066, 'Vitória'),
+(538886, 'Marechal Floriano'),
+(123466, 'Domingos Martins'),
+(532088, 'Serra'),
+(112776, 'Aracruz'),
+(532444, 'Fundão');
+
+INSERT INTO bairro
+VALUES (000123, 'Coqueiral', 532666),
+(698623, 'Manguinhos', 532444),
+(000666, 'Campo Grande', 532066),
+(603203, 'Jardim América', 532066),
+(055423, 'Jacaraipe', 532088),
+(003130, 'Lanranjeiras', 532088),
+(204403, 'Morada', 112776),
+(002423, 'Mata da Praia', 100066),
+(003323, 'Manguinhos', 538886),
+(130123, 'Carapina', 532088);
+
+INSERT INTO endereco
+VALUES (1235963, 'Linhares', 000123, 532088),
+(6325963, 'Amélia Silva', 000666, 123466),
+(1265263, 'Cristovao Colombo', 000123, 532088),
+(9300163, 'Aleixo Neto', 002423, 100066),
+(1222003, 'Barreto Silva', 055423, 112776),
+(6238423, 'Luiz Lima', 000666, 123466),
+(1235300, 'Cerqueira Lima', 603203, 123466),
+(4288963, 'Assis Lopes', 055423, 532088),
+(1266963, 'Reta da Penha', 002423, 100066),
+(5235113, 'Fernando Ferrari', 130123, 100066);
+
+INSERT INTO boletim
+VALUES (9875632, '2018/06/30', '15:43:43', 'celular', 'roubo', 6325963),
+(2987632, '2018/06/28', '15:50:00', 'carteira', 'roubo', 1235963),
+(6375212, '2016/08/02', '17:21:12', 'mochila', 'roubo', 6325963),
+(2375032, '2018/06/30', '13:43:32', 'carro', 'roubo', 6325963),
+(6300632, '2018/07/26', '09:52:00', 'celular', 'roubo', 9300163),
+(1000332, '2017/03/13', '08:00:09', 'celular', 'roubo', 1222003),
+(8635632, '2018/01/25', '10:00:52', 'carteira', 'roubo', 1222003),
+(9870232, '2017/06/30', '19:10:47', 'celular', 'roubo', 4288963),
+(9878432, '2018/09/17', '18:30:20', 'mochila', 'roubo', 5235113),
+(6307896, '2018/09/27', '14:00:00', 'celular', 'roubo', 4288963);
+
+INSERT INTO cliente
+VALUES (12381736742, 'Luiz Gomes', 'luiz.barros@gmail.com', '123abc'),
+(12871736014, 'Amanda Santos', 'amanda@gmail.com', '1aba78'),
+(63384236702, 'Ana Maria Lopes', 'anam_lopes@hotmail.com', '36fa**'),
+(86210036742, 'Betina Santos', 'betina@gmail.com', '12*22c'),
+(18981734742, 'Luiz Gomes', 'luiz_gomess@gmail.com', '140*bdc'),
+(2438177430, 'Bruna Muniz', 'souzamuniz@hotmail.com', '163*50c'),
+(98765736742, 'Maria Antonieta', 'mari.ant@hotmail.com', 'bmlabc'),
+(86337936742, 'Luiz Miguel', 'luiz.miguel@gmail.com', '196+00'),
+(74382036742, 'Carla Silva Pereira', 'carlasilva@hotmail.com', 'bmd*0bc'),
+(62681936642, 'Isabela Guimarães', 'Isabela@gmail.com', '123510');
+
+INSERT INTO entrega
+VALUES (148869, 12381736742, 1235963, 1266963),
+(328746, 2438177430, 6325963, 5235113),
+(058832, 12871736014, 1265263, 1266963),
+(177779, 63384236702, 1235963, 4288963),
+(149969, 86210036742, 1235300, 1235300),
+(148810, 2438177430, 1222003, 6238423),
+(448209, 62681936642, 4288963, 1222003),
+(118817, 86210036742, 4288963, 9300163),
+(141969, 86210036742, 4288963, 1265263),
+(298828, 74382036742, 1266963, 6325963);
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
