@@ -66,69 +66,65 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 >## Marco de Entrega 02 em: (13/09/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
+
+    •USUARIO: Tabela que armazena informações relativas ao usuário.<br>
+    
+      -EMAIL: Campo que armazena o email referente ao usuário.<br>
+      -SEXO: Campo que armazena o genêro do usuário com 'M' ou 'F'.<br>
+      -COD_USUARIO: Campo que armazena o código único do usuário.<br>
+    
+    •BOLETIM: Tabela que armazena informações sobre boletins de ocorrência registrados.<br>
+    
+      -DATA_ROUBO: Indica a data do roubo registrado no boletim.<br>
+      -HORA_ROUBO: Indica a hora do roubo registrado no boletim.<br>
+      -ITENS_ROUBO: Indica os itens roubados.<br>
+      -TIPO_ROUBO: Indica o tipo de roubo.<br>
+      -COD_BOLETIM: Indica o código único do boletim.<br>
+      -FK_COD_USUARIO: Campo que faz referência ao código de usuário, relacionando o boletim com o usuário que o fez.<br>
+    
+    •ENTREGA: Tabela que contém informações a respeito da entrega.<br>
+    
+      -ORIGEM: Campo que indica a origem da mercadoria.<br>
+      -DESTINO: Campo que indica o destino final da mercadoria.<br>
+      -COD_ENTREGA: Campo que indica o código único referente à entrega.<br>
+      -FK_COD_ENDERECO_ORIGEM: Campo que referencia ao código de endereço da origem da entrega.<br>
+      -FK_COD_ENDERECO_DESTINO: Campo que referencia ao código de endereço do destino da entrega.<br>
+    
+    •CLIENTE: Tabela que contém informações relacionadas ao cliente(Interessado no transporte da mercadoria).<br>
+    
+      -NOME: Campo contendo o nome do cliente.<br>
+      -EMAIL: Campo contendo o email do cliente.<br>
+      -SENHA: Campo contendo a senha escolhida pelo cliente.<br>
+      -CPF: Campo contendo o CPF do cliente.<br>
+    
+    •ENDERECO: Tabela que armazena endereços.<br>
+    
+      -RUA: Campo que armazena rua.<br>
+      -MUNICIPIO: Campo que armazena o município.<br>
+      -BAIRRO: Campo que armazena o bairro.<br>
+      -FK_COD_MUNICIPIO: Campo que faz referência ao código de um município para compor o endereço.<br>
+      -FK_CO_BAIRRO: Campo que faz referência ao código de um bairro para compor o endereço.<br>
+    
+    •MUNICIPIO: Tabela que armazena os municípios.<br>
+    
+      -NOME_MUNICIPIO: Campo que armazena o nome do município.<br>
+      -COD_MUNICIPIO: Campo que contém o código único do município.<br>
+      
+    •BAIRRO: Tabela que armazena os bairros.<br>
+    
+      -NOME_BAIRRO: Campo que armazena o nome dos bairros.<br>
+      -COD_BAIRRO: Campo que contém o código único do bairro.<br>
     
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
-
-
+    
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
 
 ### 7	MODELO FÍSICO<br>
-
-CREATE TABLE usuario(
-  cod SERIAL PRIMARY KEY NOT NULL,  
-  email VARCHAR(60),
-  sexo CHAR(1),  
-);
-
-CREATE TABLE boletim(
-  cod_boletim INTEGER PRIMARY KEY NOT NULL,
-  data_roubo DATE,
-  hora_roubo TIME,
-  item_roubo VARCHAR(60),
-  tipo_roubo VARCHAR(50),
-  cod_endereco INTEGER,
-  FOREIGN KEY(cod_endereco) REFERENCES endereco(cod_end)  
-);
-
-CREATE TABLE endereco(
-  cod_end INTEGER PRIMARY KEY,
-  rua VARCHAR(60)
-  cod_bairro INTEGER,
-  cod_municipio INTEGER,
-  FOREIGN KEY (cod_bairro) REFERENCES bairro(cod_bairro),
-  FOREIGN KEY (cod_municipio) REFERENCES municipio(cod_municipio)
-
-);
-
-CREATE TABLE municipio(
-  cod_municipio SERIAL PRIMARY KEY NOT NULL,
-  nome_municipio VARCHAR(60)     
-);
-
-CREATE TABLE bairro(
-  cod_bairro INTERGER PRIMARY KEY NOT NULL,
-  nome_bairro VARCHAR(40),
-  cod_municipio INTEGER,
-  FOREIGN KEY (cod_municipio) REFERENCES municipio (cod_municipio)
-);
-
-CREATE TABLE entrega(
-  cod_entrega SERIAL PRIMARY KEY NOT NULL,
-  cod_cliente INTEGER,
-  origem INTEGER,
-  destino INTEGER,
-  
-  FOREIGN KEY(cod_cliente) REFERENCES cliente(cpf),
-  FOREIGN KEY(origem) REFERENCES endereco(cod_end),
-  FOREIGN KEY(destino) REFERENCES endereco(cod_end)
-);
+        a) inclusão das instruções de criacão das estruturas DDL 
+        (criação de tabelas, alterações, etc..)          
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
