@@ -67,52 +67,52 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 >## Marco de Entrega 02 em: (13/09/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
 
-    •USUARIO: Tabela que armazena informações relativas ao usuário.<br>
+    •USUARIO: Tabela que armazena informações relativas ao usuário.
     
-      -EMAIL: Campo que armazena o email referente ao usuário.<br>
-      -SEXO: Campo que armazena o genêro do usuário com 'M' ou 'F'.<br>
-      -COD_USUARIO: Campo que armazena o código único do usuário.<br>
+      -EMAIL: Campo que armazena o email referente ao usuário.
+      -SEXO: Campo que armazena o genêro do usuário com 'M' ou 'F'.
+      -COD_USUARIO: Campo que armazena o código único do usuário.
     
-    •BOLETIM: Tabela que armazena informações sobre boletins de ocorrência registrados.<br>
+    •BOLETIM: Tabela que armazena informações sobre boletins de ocorrência registrados.
     
-      -DATA_ROUBO: Indica a data do roubo registrado no boletim.<br>
-      -HORA_ROUBO: Indica a hora do roubo registrado no boletim.<br>
-      -ITENS_ROUBO: Indica os itens roubados.<br>
-      -TIPO_ROUBO: Indica o tipo de roubo.<br>
-      -COD_BOLETIM: Indica o código único do boletim.<br>
-      -FK_COD_USUARIO: Campo que faz referência ao código de usuário, relacionando o boletim com o usuário que o fez.<br>
+      -DATA_ROUBO: Indica a data do roubo registrado no boletim.
+      -HORA_ROUBO: Indica a hora do roubo registrado no boletim.
+      -ITENS_ROUBO: Indica os itens roubados.
+      -TIPO_ROUBO: Indica o tipo de roubo.
+      -COD_BOLETIM: Indica o código único do boletim.
+      -FK_COD_USUARIO: Campo que faz referência ao código de usuário, relacionando o boletim com o usuário que o fez.
     
-    •ENTREGA: Tabela que contém informações a respeito da entrega.<br>
+    •ENTREGA: Tabela que contém informações a respeito da entrega.
     
-      -ORIGEM: Campo que indica a origem da mercadoria.<br>
-      -DESTINO: Campo que indica o destino final da mercadoria.<br>
-      -COD_ENTREGA: Campo que indica o código único referente à entrega.<br>
-      -FK_COD_ENDERECO_ORIGEM: Campo que referencia ao código de endereço da origem da entrega.<br>
-      -FK_COD_ENDERECO_DESTINO: Campo que referencia ao código de endereço do destino da entrega.<br>
+      -ORIGEM: Campo que indica a origem da mercadoria.
+      -DESTINO: Campo que indica o destino final da mercadoria.
+      -COD_ENTREGA: Campo que indica o código único referente à entrega.
+      -FK_COD_ENDERECO_ORIGEM: Campo que referencia ao código de endereço da origem da entrega.
+      -FK_COD_ENDERECO_DESTINO: Campo que referencia ao código de endereço do destino da entrega.
     
-    •CLIENTE: Tabela que contém informações relacionadas ao cliente(Interessado no transporte da mercadoria).<br>
+    •CLIENTE: Tabela que contém informações relacionadas ao cliente(Interessado no transporte da mercadoria).
     
-      -NOME: Campo contendo o nome do cliente.<br>
-      -EMAIL: Campo contendo o email do cliente.<br>
-      -SENHA: Campo contendo a senha escolhida pelo cliente.<br>
-      -CPF: Campo contendo o CPF do cliente.<br>
+      -NOME: Campo contendo o nome do cliente.
+      -EMAIL: Campo contendo o email do cliente.
+      -SENHA: Campo contendo a senha escolhida pelo cliente.
+      -CPF: Campo contendo o CPF do cliente.
     
-    •ENDERECO: Tabela que armazena endereços.<br>
+    •ENDERECO: Tabela que armazena endereços.
     
-      -RUA: Campo que armazena rua.<br>
-      -MUNICIPIO: Campo que armazena o município.<br>
-      -BAIRRO: Campo que armazena o bairro.<br>
-      -FK_COD_MUNICIPIO: Campo que faz referência ao código de um município para compor o endereço.<br>
-      -FK_CO_BAIRRO: Campo que faz referência ao código de um bairro para compor o endereço.<br>
+      -RUA: Campo que armazena rua.
+      -MUNICIPIO: Campo que armazena o município.
+      -BAIRRO: Campo que armazena o bairro.
+      -FK_COD_MUNICIPIO: Campo que faz referência ao código de um município para compor o endereço.
+      -FK_CO_BAIRRO: Campo que faz referência ao código de um bairro para compor o endereço.
     
-    •MUNICIPIO: Tabela que armazena os municípios.<br>
+    •MUNICIPIO: Tabela que armazena os municípios.
     
-      -NOME_MUNICIPIO: Campo que armazena o nome do município.<br>
-      -COD_MUNICIPIO: Campo que contém o código único do município.<br>
+      -NOME_MUNICIPIO: Campo que armazena o nome do município.
+      -COD_MUNICIPIO: Campo que contém o código único do município.
       
-    •BAIRRO: Tabela que armazena os bairros.<br>
+    •BAIRRO: Tabela que armazena os bairros.
     
-      -NOME_BAIRRO: Campo que armazena o nome dos bairros.<br>
+      -NOME_BAIRRO: Campo que armazena o nome dos bairros.
       -COD_BAIRRO: Campo que contém o código único do bairro.<br>
     
 
