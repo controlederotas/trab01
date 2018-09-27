@@ -82,53 +82,54 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ### 7	MODELO FÍSICO<br>
 
 	CREATE TABLE usuario(
-  	cod SERIAL PRIMARY KEY NOT NULL,  
-  	email VARCHAR(60),
-  	sexo CHAR(1),  
+  		cod SERIAL PRIMARY KEY NOT NULL,  
+  		email VARCHAR(60),
+  		sexo CHAR(1),  
 	);
 
 	CREATE TABLE boletim(
-  	cod_boletim INTEGER PRIMARY KEY NOT NULL,
-  	data_roubo DATE,
-  	hora_roubo TIME,
-  	item_roubo VARCHAR(60),
-  	tipo_roubo VARCHAR(50),
-  	cod_endereco INTEGER,
-  	FOREIGN KEY(cod_endereco) REFERENCES endereco(cod_end)  
+  		cod_boletim INTEGER PRIMARY KEY NOT NULL,
+		  data_roubo DATE,
+		  hora_roubo TIME,
+		  item_roubo VARCHAR(60),
+		  tipo_roubo VARCHAR(50),
+		  cod_endereco INTEGER,
+		  FOREIGN KEY(cod_endereco) REFERENCES endereco(cod_end)  
 	);
 
 	CREATE TABLE endereco(
-  	cod_end INTEGER PRIMARY KEY,
-  	rua VARCHAR(60)
-  	cod_bairro INTEGER,
-  	cod_municipio INTEGER,
-  	FOREIGN KEY (cod_bairro) REFERENCES bairro(cod_bairro),
-  	FOREIGN KEY (cod_municipio) REFERENCES municipio(cod_municipio)
+		  cod_end INTEGER PRIMARY KEY,
+		  rua VARCHAR(60)
+		  cod_bairro INTEGER,
+		  cod_municipio INTEGER,
+		  FOREIGN KEY (cod_bairro) REFERENCES bairro(cod_bairro),
+		  FOREIGN KEY (cod_municipio) REFERENCES municipio(cod_municipio)
+
 	);
 
 	CREATE TABLE municipio(
-  	cod_municipio SERIAL PRIMARY KEY NOT NULL,
-  	nome_municipio VARCHAR(60)     
+		  cod_municipio SERIAL PRIMARY KEY NOT NULL,
+		  nome_municipio VARCHAR(60)     
 	);
 
 	CREATE TABLE bairro(
-  	cod_bairro INTERGER PRIMARY KEY NOT NULL,
-  	nome_bairro VARCHAR(40),
-  	cod_municipio INTEGER,
-  	FOREIGN KEY (cod_municipio) REFERENCES municipio (cod_municipio)
+		  cod_bairro INTERGER PRIMARY KEY NOT NULL,
+		  nome_bairro VARCHAR(40),
+		  cod_municipio INTEGER,
+		  FOREIGN KEY (cod_municipio) REFERENCES municipio (cod_municipio)
 	);
 
 	CREATE TABLE entrega(
-  	cod_entrega SERIAL PRIMARY KEY NOT NULL,
-  	cod_cliente INTEGER,
-  	origem INTEGER,
-  	destino INTEGER,
-  
-  	FOREIGN KEY(cod_cliente) REFERENCES cliente(cpf),
-  	FOREIGN KEY(origem) REFERENCES endereco(cod_end),
-  	FOREIGN KEY(destino) REFERENCES endereco(cod_end)
+		  cod_entrega SERIAL PRIMARY KEY NOT NULL,
+		  cod_cliente INTEGER,
+		  origem INTEGER,
+		  destino INTEGER,
+
+		  FOREIGN KEY(cod_cliente) REFERENCES cliente(cpf),
+		  FOREIGN KEY(origem) REFERENCES endereco(cod_end),
+		  FOREIGN KEY(destino) REFERENCES endereco(cod_end)
 	);
-        
+
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico 
