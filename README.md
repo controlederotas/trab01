@@ -129,6 +129,13 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 		  FOREIGN KEY(origem) REFERENCES endereco(cod_end),
 		  FOREIGN KEY(destino) REFERENCES endereco(cod_end)
 	);
+	
+	CREATE TABLE cliente(
+		cpf VARCHAR(14) PRIMARY KEY NOT NULL,
+		nome VARCHAR(100),
+		email VARCHAR(150),
+		senha VARCHAR(30)
+	);
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
