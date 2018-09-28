@@ -118,9 +118,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do modelo lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+
 ![Alt text](https://raw.githubusercontent.com/controlederotas/trab01/master/images/Lógico_2.png)
 
 ### 7	MODELO FÍSICO<br>
