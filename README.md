@@ -46,7 +46,7 @@ A tabela macro contem algum dos itens que identificamos até agora, como é uma 
 
 ### 5.MODELO CONCEITUAL<br>
         
-![Alt text](https://raw.githubusercontent.com/controlederotas/trab01/master/images/modelo_conceitual.png)
+![Alt text](https://raw.githubusercontent.com/controlederotas/trab01/master/images/modelo_conceitual_novo.png)
         
     
 #### 5.1 Validação do Modelo Conceitual
