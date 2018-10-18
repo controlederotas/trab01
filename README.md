@@ -69,41 +69,54 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
     •USUARIO: Tabela que armazena informações relativas ao usuário.
     
-      -EMAIL: Campo que armazena o email referente ao usuário.
-      -SEXO: Campo que armazena o genêro do usuário com 'M' ou 'F'.
-      -COD_USUARIO: Campo que armazena o código único do usuário.
+    	-EMAIL: Campo que armazena o email referente ao usuário.
+      	-SEXO: Campo que armazena o genêro do usuário com 'M' ou 'F'.
+      	-COD_USUARIO: Campo que armazena o código único do usuário.
     
     •BOLETIM: Tabela que armazena informações sobre boletins de ocorrência registrados.
     
-      -DATA_ROUBO: Indica a data do roubo registrado no boletim.
-      -HORA_ROUBO: Indica a hora do roubo registrado no boletim.
-      -ITENS_ROUBO: Indica os itens roubados.
-      -TIPO_ROUBO: Indica o tipo de roubo.
-      -COD_BOLETIM: Indica o código único do boletim.
-      -FK_COD_USUARIO: Campo que faz referência ao código de usuário, relacionando o boletim com o usuário que o fez.
+     	-DATA_ROUBO: Indica a data do roubo registrado no boletim.
+      	-HORA_ROUBO: Indica a hora do roubo registrado no boletim.
+      	-TIPO_ROUBO: Indica o tipo de roubo.
+      	-COD_BOLETIM: Indica o código único do boletim.
+      	-ID: Chave primária que faz referência ao código de usuário, relacionando o boletim com o usuário que o fez.
     
     •ENTREGA: Tabela que contém informações a respeito da entrega.
     
-      -ORIGEM: Campo que indica a origem da mercadoria.
-      -DESTINO: Campo que indica o destino final da mercadoria.
-      -COD_ENTREGA: Campo que indica o código único referente à entrega.
-      -FK_COD_ENDERECO_ORIGEM: Campo que referencia ao código de endereço da origem da entrega.
-      -FK_COD_ENDERECO_DESTINO: Campo que referencia ao código de endereço do destino da entrega.
+    	-COD_ENTREGA: Campo que indica o código único referente à entrega.
+      	-Destino_entrega: Campo que referencia ao código de endereço da origem da entrega. (Chave primária)
     
     •CLIENTE: Tabela que contém informações relacionadas ao cliente(Interessado no transporte da mercadoria).
     
-      -NOME: Campo contendo o nome do cliente.
-      -EMAIL: Campo contendo o email do cliente.
-      -SENHA: Campo contendo a senha escolhida pelo cliente.
-      -CPF: Campo contendo o CPF do cliente.
+      	-NOME: Campo contendo o nome do cliente.
+      	-EMAIL: Campo contendo o email do cliente.
+      	-SENHA: Campo contendo a senha escolhida pelo cliente.
+      	-CPF: Campo contendo o CPF do cliente.
+      
+    •PESSOA: Tabela que guarda informações referentes à uma pessoa, cliente do sistema ou não.
+    
+    	- ID: Chave primária contendo um identificador da pessoa.
+	- Nome: Campo que indica o nome da pessoa.
+	- Email: Campo que indica o email referente à uma pessoa.
+	
+    •FÍSICA: Tabela que guarda informações do tipo pessoa física.
+    	
+	- CPF: Campo que guarda o CPF de uma pessoa física.
+	- Sexo: Campo que indica o sexo de uma pessoa.
+
+    •JURÍDICA: Tabela que guarda informações do tipo pessoa jurídica.
+    
+    	- CNPJ: Campo que guarda o CNPJ de uma pessoa jurídica.
+	
+    •CLIENTE: Tabela que guarda informações relevantes ao cliente.
+    
+    	- Senha: Campo que armazena a senha de um cliente.
+	
     
     •ENDERECO: Tabela que armazena endereços.
     
-      -RUA: Campo que armazena rua.
-      -MUNICIPIO: Campo que armazena o município.
-      -BAIRRO: Campo que armazena o bairro.
-      -FK_COD_MUNICIPIO: Campo que faz referência ao código de um município para compor o endereço.
-      -FK_CO_BAIRRO: Campo que faz referência ao código de um bairro para compor o endereço.
+      -Tipo_logradouro: Campo que armazena o tipo de logradouro referente a um endereço(Rua, avenida...).
+      -Cod_end
     
     •MUNICIPIO: Tabela que armazena os municípios.
     
@@ -113,7 +126,19 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
     •BAIRRO: Tabela que armazena os bairros.
     
       -NOME_BAIRRO: Campo que armazena o nome dos bairros.
-      -COD_BAIRRO: Campo que contém o código único do bairro.<br>
+      -COD_BAIRRO: Campo que contém o código único do bairro.
+      
+    •CONTATO: Tabela que armazena um contato de um usuário.
+    
+    	- Contato_cliente: Campo que armazena uma forma de contato ao cliente.
+	- Cod_contato: Campo que armazena o código do tipo de contato relacionado ao inserido no campo "Contato_cliente".
+	
+    •TIPO_DE_CONTATO: Tabela que armazena os tipos de contato.
+    
+   	- Tipo_contato: Campo que armazena os tipos de contato possíveis. 
+	- Cod_tipo_contato: Campo que armazena o código do tipo de contato do cliente.
+	
+	
     
 
 
