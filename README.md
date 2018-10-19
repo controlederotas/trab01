@@ -1008,15 +1008,15 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
 	
 	SELECT * FROM tipo_de_contato WHERE cod_tipo_contato = '22' OR tipo_contato = 'Telefone Comercial';
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_1.jpg)
 
 
 	select * from boletim where (current_date - data_roubo)>365;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_2.jpg)
 
 
 	Select nome from pessoa inner join boletim on (pessoa.id = boletim.fk_pessoa_id);
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_3.jpg)
 
 
 	SELECT * FROM endereco WHERE fk_logradouro_cod_logradouro IS NOT NULL;
