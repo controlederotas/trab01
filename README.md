@@ -953,7 +953,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/bairro.png)
 	
 	SELECT * FROM boletim
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/bairro.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/boletim.png)
 
 	SELECT * FROM cliente
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/cliente.png)
