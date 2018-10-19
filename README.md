@@ -1008,7 +1008,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
 	
 	SELECT * FROM tipo_de_contato WHERE cod_tipo_contato = '22' OR tipo_contato = 'Telefone Comercial';
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_1.jpg)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_1.JPG)
 
 
 	select * from boletim where (current_date - data_roubo)>365;
