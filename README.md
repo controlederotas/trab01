@@ -1006,6 +1006,49 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
+	
+	SELECT * FROM tipo_de_contato WHERE cod_tipo_contato = '22' OR tipo_contato = 'Telefone Comercial';
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+
+	select * from boletim where (current_date - data_roubo)>365;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/1.png)
+
+
+	Select nome from pessoa inner join boletim on (pessoa.id = boletim.fk_pessoa_id);
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+
+	SELECT * FROM endereco WHERE fk_logradouro_cod_logradouro IS NOT NULL;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+
+	SELECT * FROM entrega WHERE cod_entrega > 42761 AND destino_entrega = 'Serra';
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+
+	SELECT * FROM boletim WHERE cod_tipo = 1 AND cod_item > 3;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+
+	SELECT * FROM boletim WHERE cod_item = 2 OR cod_tipo = 2;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+
+	SELECT fk_boletim_id AS id_boletim FROM tipo_roubo;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+
+	SELECT fk_pessoa_id AS id_pessoa FROM juridica;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+
+	SELECT fk_logradouro_cod_logradouro AS cod_logradouro FROM endereco;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+    
+    
+    
+    
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
