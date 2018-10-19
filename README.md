@@ -1017,7 +1017,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_1.png)
 
 	SELECT * FROM pessoa WHERE nome LIKE '%s';
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_2_3.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_2.png)
 
 	SELECT * FROM bairro WHERE nome_bairro LIKE '______';
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_3.png)
