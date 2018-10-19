@@ -1020,27 +1020,27 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 
 	SELECT * FROM endereco WHERE fk_logradouro_cod_logradouro IS NOT NULL;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_4.JPG)
 
 
 	SELECT * FROM entrega WHERE cod_entrega > 42761 AND destino_entrega = 'Serra';
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_5.JPG)
 
 
 	SELECT * FROM boletim WHERE cod_tipo = 1 AND cod_item > 3;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_6.JPG)
 
 
 	SELECT * FROM boletim WHERE cod_item = 2 OR cod_tipo = 2;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_7.JPG)
 
 
 	SELECT fk_boletim_id AS id_boletim FROM tipo_roubo;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_8.JPG)
 
 
 	SELECT fk_pessoa_id AS id_pessoa FROM juridica;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_9.JPG)
 
 
 	SELECT fk_logradouro_cod_logradouro AS cod_logradouro FROM endereco;
