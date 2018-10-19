@@ -67,10 +67,10 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 >## Marco de Entrega 02 em: (13/09/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
 
-    •USUARIO: Tabela que armazena informações relativas ao usuário.
+    •PESSOA: Tabela que armazena informações relativas ao usuário.
     
+    	-NOME: Campo que armazena o nome de uma pessoa, podendo esta ser um cliente ou não.
     	-EMAIL: Campo que armazena o email referente ao usuário.
-      	-SEXO: Campo que armazena o genêro do usuário com 'M' ou 'F'.
       	-COD_USUARIO: Campo que armazena o código único do usuário.
     
     •BOLETIM: Tabela que armazena informações sobre boletins de ocorrência registrados.
@@ -79,12 +79,16 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
       	-HORA_ROUBO: Indica a hora do roubo registrado no boletim.
       	-TIPO_ROUBO: Indica o tipo de roubo.
       	-COD_BOLETIM: Indica o código único do boletim.
-      	-ID: Chave primária que faz referência ao código de usuário, relacionando o boletim com o usuário que o fez.
+      	-ID: Chave primária que indica o código de usuário, relacionando o boletim com o usuário que o fez.
+	-FK_ENDERECO_Cod: Chave estrangeira associada a um código de endereço.
+	-FK_PESSOA_ID: Chave estrangeira associada a um ID de uma pessoa previamente cadastrada. 
     
     •ENTREGA: Tabela que contém informações a respeito da entrega.
     
     	-COD_ENTREGA: Campo que indica o código único referente à entrega.
       	-Destino_entrega: Campo que referencia ao código de endereço da origem da entrega. (Chave primária)
+	-FK_PESSOA_ID: Chave estrangeira do ID de uma pessoa.
+	-FK_ENDERECO_Cod: Chave estrangeira referente ao código de um endereço.
     
     •CLIENTE: Tabela que contém informações relacionadas ao cliente(Interessado no transporte da mercadoria).
     
@@ -103,41 +107,65 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
     	
 	- CPF: Campo que guarda o CPF de uma pessoa física.
 	- Sexo: Campo que indica o sexo de uma pessoa.
+	- FK_PESSOA_ID_SERIAL: Chave estrangeira do ID específico de uma pessoa cadastrada no sistema.
 
     •JURÍDICA: Tabela que guarda informações do tipo pessoa jurídica.
     
     	- CNPJ: Campo que guarda o CNPJ de uma pessoa jurídica.
+	- FK_PESSOA_ID: Chave estrangeira referente ao ID de uma pessoa cadastrada na tabela 'PESSOA'.
 	
     •CLIENTE: Tabela que guarda informações relevantes ao cliente.
     
     	- Senha: Campo que armazena a senha de um cliente.
-	
-    
+	- FK_PESSOA_ID: Chave estrangeira referente ao ID de uma pessoa cadastrada na tabela 'PESSOA'.
+
     •ENDERECO: Tabela que armazena endereços.
     
       -Tipo_logradouro: Campo que armazena o tipo de logradouro referente a um endereço(Rua, avenida...).
-      -Cod_end
+      -Cod_end: Chave primária com o código único de um endereço específico.
+      -FK_MUNICIPIO_Cod_Municipio: Chave estrangeira que resgata o código que serve como chave primária de um endereço.
+      -FK_Logradouro_Cod_logradouro: Chave estrangeira que resgata o código que serve como chave primária de um logradouro. 
     
     •MUNICIPIO: Tabela que armazena os municípios.
     
       -NOME_MUNICIPIO: Campo que armazena o nome do município.
       -COD_MUNICIPIO: Campo que contém o código único do município.
+      -FK_BAIRRO_Cod_bairro: Chave estrangeira referente ao código de bairro da tabela 'BAIRRO'.	
       
     •BAIRRO: Tabela que armazena os bairros.
     
       -NOME_BAIRRO: Campo que armazena o nome dos bairros.
-      -COD_BAIRRO: Campo que contém o código único do bairro.
+      -COD_BAIRRO: Chave primária que contém o código único do bairro.
       
     •CONTATO: Tabela que armazena um contato de um usuário.
     
     	- Contato_cliente: Campo que armazena uma forma de contato ao cliente.
-	- Cod_contato: Campo que armazena o código do tipo de contato relacionado ao inserido no campo "Contato_cliente".
+	- FK_PESSOA_ID: Chave estrangeira que se refere ao ID de uma pessoa.
+	- FK_TIPO_DE_CONTATO: Chave estrangeira referente ao código de um tipo de contato.
 	
     •TIPO_DE_CONTATO: Tabela que armazena os tipos de contato.
     
    	- Tipo_contato: Campo que armazena os tipos de contato possíveis. 
-	- Cod_tipo_contato: Campo que armazena o código do tipo de contato do cliente.
+	- Cod_tipo_contato: Chave primária que armazena o código do tipo de contato do cliente.
 	
+    •TIPO_ROUBO: Tabela contendo os tipos de roubo possíveis. Será útil pois o tipo de roubo é relevante para levantamento de dados mais consistentes que serão utilizados no sistema.
+    
+    	-Tipo: Campo que armazena o tipo de roubo.
+	-Cod_tipo: Chave primária que armazena o código de um tipo específico de roubo.
+	-FK_BOLETIM_ID: Chave estrangeira que faz referência ao ID do boletim.
+	
+    •ITEM_ROUBO: Tabela contendo os itens, especificamente, que foram roubados.
+    
+    	-Item: Campo que armazena o nome do item roubado. 
+	-Cod_Item: Chave primária para identificar o item.
+	-FK_BOLETIM_ID: Chave estrangeira que faz referência ao ID do boletim.
+	
+    •LOGRADOURO: Tabela contendo informações sobre logradouros e seus possíveis tipos.
+    
+    	-Cod_logradouro: Chave primária identificando o código do logradouro.
+	-Tipo_logradouro: Campo que armazena o tipo de logradouro.
+
+    •
 	
     
 
