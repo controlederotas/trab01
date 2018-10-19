@@ -1012,6 +1012,25 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
+    
+	SELECT * FROM pessoa WHERE nome LIKE 'A%';
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_1.png)
+
+	SELECT * FROM pessoa WHERE nome LIKE '%s';
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_2_3.png)
+
+	SELECT * FROM bairro WHERE nome_bairro LIKE '______';
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_3.png)
+
+	SELECT * FROM bairro WHERE nome_bairro LIKE '_a%'
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_4.png)
+
+	SELECT * FROM pessoa WHERE nome LIKE '%ana%';
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_5.png)
+
+	SELECT id, current_date - data_roubo as "tempo em dias registro BO" FROM boletim 
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/data_1.png)
+
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
