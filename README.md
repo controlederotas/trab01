@@ -1012,11 +1012,11 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 
 	select * from boletim where (current_date - data_roubo)>365;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_2.jpg)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_2.JPG)
 
 
 	Select nome from pessoa inner join boletim on (pessoa.id = boletim.fk_pessoa_id);
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_3.jpg)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.3_3.JPG)
 
 
 	SELECT * FROM endereco WHERE fk_logradouro_cod_logradouro IS NOT NULL;
@@ -1044,7 +1044,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 
 	SELECT fk_logradouro_cod_logradouro AS cod_logradouro FROM endereco;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.2_10.JPG)
     
     
     
