@@ -992,6 +992,19 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tipo_roubo.png)
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+	SELECT * FROM bairro WHERE nome_bairo = 'Campo Grande'
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_1.png)
+
+	SELECT * FROM entrega WHERE destino_entrega = 'Cariacica'
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_2.png)
+
+	SELECT * FROM tipo_de_contato WHERE tipo_contato = 'Celular comercial'
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_3.png)
+
+	SELECT * FROM logradouro WHERE tipo_logradouro = 'Rua'
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_4.png)
+
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
