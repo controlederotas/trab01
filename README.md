@@ -172,7 +172,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 ### 6	MODELO LÓGICO<br>
 
-![Alt text](https://raw.githubusercontent.com/controlederotas/trab01/master/images/logico_18_10.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/logico.png)
 
 ### 7	MODELO FÍSICO<br>
 	
