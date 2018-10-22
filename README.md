@@ -819,21 +819,6 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
 	/* EXCLUSÃO DE DADOS - DROP */
 
-	DROP TABLE IF EXISTS pessoa;
-	DROP TABLE IF EXISTS endereco;
-	DROP TABLE IF EXISTS municipio;
-	DROP TABLE IF EXISTS boletim;
-	DROP TABLE IF EXISTS bairro;
-	DROP TABLE IF EXISTS fisica;
-	DROP TABLE IF EXISTS juridica;
-	DROP TABLE IF EXISTS cliente;
-	DROP TABLE IF EXISTS tipo_roubo;
-	DROP TABLE IF EXISTS item_roubo;
-	DROP TABLE IF EXISTS juridica;
-	DROP TABLE IF EXISTS tipo_de_contato;
-	DROP TABLE IF EXISTS contato;
-	DROP TABLE IF EXISTS entrega;
-
 
 	/* MODELO FÍSICO */
 
