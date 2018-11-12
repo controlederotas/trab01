@@ -17,7 +17,7 @@ A empresa Controle de Rotas tem como foco principal encontrar e apontar locais c
 
 ### 3.MINI-MUNDO Novo<br>
 
-O sistema proposto para a Controle de Rotas conterá as seguintes informações. Primeiramente o sistema precisa receber o local de origem e destino da entrega da mercadoria. Os dados armazenados referentes à essa etapa serão hora de saída do local de entrega, cep, rua, número, bairro e estado de cada uma das localidades. A proposta do sistema é conseguir mostrar os pontos mais violentos de determinada área. Essa área nada mais é que a região pertencente à origem e ao destino. Para exibir esses pontos, o sistema precisa ter acesso ao mapa da região e também ao índice de assaltos recorrentes correspondente àquela área. O mapa da região é composto por ruas. Os índices de assaltos são representados pela quantidade de registros de boletins de ocorrência para àquela localidade, juntamente com a data e hora de cada ocorrência. É possível também o usuário contribuir com o sistema informando no site da empresa as ocorrências de roubo/furto. Para registrar a ocorrência o usuário precisa fazer um login com e-mail e senha. Depois é preciso informar a cidade que aconteceu a ocorrência, o tipo de roubo, o tipo de item furtado, o sexo e a data e hora. Por meio de toda essa avaliação o sistema consegue mostrar ao usuário os pontos mais violentos desse percurso para que assim ele possa evitá-los.
+O sistema proposto para a Controle de Rotas funcionará da seguinte forma. Exite uma pessoa, que poderá ser definida em três tipos: física, jurídica e cliente. O cliente poderá ser tanto a pessoa física quanto a jurídica. A pessoa registra um endereço para a entrega da mercadoria. Esse endereço possui um tipo de logradouro, município e um bairro. A pessoa também possuirá um contato que será classificado em diversos tipos, tais como telefone, celular, redes sociais, etc. O sistema também proporciona que o usuário insira boletins sendo ele pessoa física ou jurídica, indicando detalhes sobre o roubo. Ele será alimentado tanto pelo registro de boletins dos usuários quanto pela extração de informações de ocorrências baseadas em fontes seguras. Para registrar essa ocorrência, o usuário precisa fazer o login com email e senha. A partir dai, informará o local da ocorrência, tipo de roubo, itens roubados, sexo, data e hora. Assim, o sistema conseguirá fornecer pontos de maior índice de violência, determinando os bairros mais perigosos e então informando rotas alternativas para uma entrega de mercadoria.  Por meio de toda essa avaliação o sistema consegue mostrar ao usuário os pontos mais violentos desse percurso para que assim ele possa evitá-los.
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Este é um prototipo das telas to sistema, um rascunho apenas, o mesmo pode sofrer alterações no decorrer do trabalho, todos os arquivos foram feitos com a ferramenta balsamic.
@@ -1278,9 +1278,6 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-	SELECT nome_bairro as "Bairros" FROM bairro GROUP BY nome_bairro;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/groupby_1.png)
-
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
