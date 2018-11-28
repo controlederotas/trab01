@@ -342,51 +342,51 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
 	INSERT INTO PESSOA
-	VALUES ('patricia.lima@hotmail.com', 194538, 'Patricia Lima'),
-	('luciana_almeida@hotmail.com', 785632, 'Luciana Fernandes'),
-	('pablorodrigues@gmail.com', 198500,  'Pablo Rodrigues'),
-	('rodrigoxavier12@bol.com', 987438, 'Rodrigo Xavier'),
-	('jose_almeida@hotmail.com', 693238,  'José Luiz'),
-	('guilherme.souza@gmail.com', 794133, 'Guilhermede Souza'),
-	('analopez@hotmail.com', 824530, 'Ana Luiza Lopes'),
-	('ada.lima@gmail.com', 634538, 'Ada Lima'),
-	('filipebarcelos@hotmail.com', 621548, 'Filipe Barcelos'),
-	('luana_aragao@gmail.com', 845538, 'Luana Aragão'),
-	('lali_magazine@lali.com', 435876, 'Lali Magazine'),
-	('livraria@livraria.com.br', 678123, 'Livraria Livros'),
-	('eletronicos@eletronicos.com', 234000, 'Eletrônica El'), 
-	('comercial@comercial.com', 885876, 'Comercial Pereira'),
-	('cosmeticosbia@cosmeticosbia.com.br', 228123, 'Bia Cosméticos'),
-	('moveis@moveismol.com', 211000, 'Moveis MOl'),
-	('Vinhosxc@hotmail.com', 400876, 'Vinhos XC'),
-	('livrarialemos@gmail.com.br', 678003, 'Livraria Lemos'),
-	('eletronicos123@eletronicos.com', 235500, 'Eletrônica 123'),
-	('lojas@gmail.com', 499876, 'Loja da Maria');
-
-	INSERT INTO BAIRRO
-	VALUES (000123, 'Coqueiral'),
-	(698623, 'Manguinhos'),
-	(000666, 'Campo Grande'),
-	(603203, 'Jardim América'),
-	(055423, 'Jacaraipe'),
-	(003130, 'Lanranjeiras'),
-	(204403, 'Morada'),
-	(002423, 'Mata da Praia'),
-	(003323, 'Santa Cruz'),
-	(130123, 'Centro'),
-	(098765, 'Campinho');
+	VALUES (194538, 'Patricia Lima'),
+	(785632, 'Luciana Fernandes'),
+	(198500,  'Pablo Rodrigues'),
+	(987438, 'Rodrigo Xavier'),
+	(693238,  'José Luiz'),
+	(794133, 'Guilhermede Souza'),
+	(824530, 'Ana Luiza Lopes'),
+	(634538, 'Ada Lima'),
+	(621548, 'Filipe Barcelos'),
+	(845538, 'Luana Aragão'),
+	(435876, 'Lali Magazine'),
+	(678123, 'Livraria Livros'),
+	(234000, 'Eletrônica El'), 
+	(885876, 'Comercial Pereira'),
+	(228123, 'Bia Cosméticos'),
+	(211000, 'Moveis MOl'),
+	(400876, 'Vinhos XC'),
+	(678003, 'Livraria Lemos'),
+	(235500, 'Eletrônica 123'),
+	(499876, 'Loja da Maria');
 
 	INSERT INTO MUNICIPIO
-	VALUES (532066, 'Cariacica', 000666), 
-	(830066, 'Viana', 204403),
-	(532666, 'Vila Velha', 000123),
-	(032000, 'Santa Tereza', 204403),
-	(100066, 'Vitória', 002423),
-	(738886, 'Marechal Floriano', 003323),
-	(123466, 'Domingos Martins', 098765),
-	(532088, 'Serra', 698623),
-	(112776, 'Aracruz', 003323),
-	(532444, 'Fundão', 130123);
+	VALUES ('Cariacica', 532066), 
+	('Viana', 830066),
+	('Vila Velha', 532666),
+	('Santa Tereza', 032000),
+	('Vitória', 100066),
+	('Marechal Floriano', 738886),
+	('Domingos Martins', 123466),
+	('Serra', 532088),
+	('Aracruz', 112776),
+	('Fundão', 532444);
+
+	INSERT INTO BAIRRO
+	VALUES ('Coqueiral', 000123, 532666),
+	('Manguinhos', 698623, 532088),
+	('Campo Grande', 000666, 532066),
+	('Jardim América', 603203, 532066),
+	('Jacaraipe', 055423, 532088),
+	('Lanranjeiras', 003130, 532088),
+	('Morada', 204403, 532444),
+	('Mata da Praia', 002423, 100066),
+	('Santa Cruz', 003323, 112776),
+	('Centro', 130123, 100066),
+	('Campinho', 098765, 123466);
 
 	INSERT INTO LOGRADOURO
 	VALUES (081, 'Rua'),
@@ -401,28 +401,32 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(036, 'Reta');
 
 	INSERT INTO ENDERECO
-	VALUES ('rua', 1234565, 532066, 081),                           
-	('rua', 1131515, 830066, 081),
-	('avenida', 0034565, 532666, 008),
-	('rodovia', 1224565, 032000, 090),
-	('escada', 1234465, 100066, 030),
-	('estrada', 1234555, 123466, 031),
-	('rua', 3235585, 532088, 081),
-	('avenida', 7234765, 532666, 081),
-	('rua', 0230565, 100066, 081),
-	('rua', 1236566, 100066, 081);
+	VALUES ('rua', 1234565, 000123, 081),                           
+	('rua', 1131515, 698623, 081),
+	('avenida', 0034565, 000666, 008),
+	('rodovia', 1224565, 003130, 090),
+	('escada', 1234465, 130123, 030),
+	('estrada', 1234555, 098765, 031),
+	('rua', 3235585, 000666, 081),
+	('avenida', 7234765, 003323, 081),
+	('rua', 0230565, 603203, 081),
+	('rua', 1236566, 002423, 081);
+
+	INSERT INTO TIPO_ROUBO
+	VALUES ('Roubo', 1),
+	('Furto', 2);
 
 	INSERT INTO BOLETIM
-	VALUES ('2018/06/30', '15:43:43', 9875632, 1, 2, 1234565, 194538),
-	('2018/06/28', '15:50:00', 2987632, 1, 1, 1131515, 785632),
-	('2016/08/02', '17:21:12', 6375212, 2, 5, 1131515, 987438),
-	('2018/06/30', '13:43:32', 2375032, 1, 8, 0034565, 198500),
-	('2018/07/26', '09:52:00', 6300632, 2, 4, 3235585, 693238),
-	('2017/03/13', '08:00:09', 1000332, 1, 4, 1234555, 794133),
-	('2018/01/25', '10:00:52', 8635632, 1, 9, 1234465, 824530),
-	('2017/06/30', '19:10:47', 9870232, 1, 7, 1236566, 824530),
-	('2018/09/17', '18:30:20', 9878432, 2, 5, 7234765, 634538),
-	('2018/09/27', '14:00:00', 6307896, 1, 6, 0230565, 621548);
+	VALUES ('2018/06/30', '15:43:43', 9875632, 1, 1234565, 194538),
+	('2018/06/28', '15:50:00', 2987632, 1, 1234565, 785632),
+	('2016/08/02', '17:21:12', 6375212, 2, 7234765, 785632),
+	('2018/06/30', '13:43:32', 2375032, 1, 3235585, 198500),
+	('2018/07/26', '09:52:00', 6300632, 2, 7234765, 794133),
+	('2017/03/13', '08:00:09', 1000332, 1, 7234765, 824530),
+	('2018/01/25', '10:00:52', 8635632, 1, 0230565, 693238),
+	('2017/06/30', '19:10:47', 9870232, 1, 0230565, 845538),
+	('2018/09/17', '18:30:20', 9878432, 2, 1234565, 634538),
+	('2018/09/27', '14:00:00', 6307896, 1, 1234565, 621548);
 
 	INSERT INTO FISICA
 	VALUES('F', '12345678901', 194538),
@@ -459,19 +463,15 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	('123456', 693238),
 	('gt5tu1', 194538);
 
-	INSERT INTO TIPO_ROUBO
-	VALUES ('Roubo', 1, 9875632),
-	('Furto', 2, 6375212);
-
 	INSERT INTO ITEM_ROUBO
-	VALUES ('Mochila', 1, 2987632),
-	('Celular', 2, 9875632),
-	('Carro', 4, 6300632),
-	('Bicicleta', 5, 6375212),
-	('Carteira', 6, 6307896),
-	('Joia', 7, 9870232),
-	('Motocicleta', 8, 2375032),
-	('Dinheiro', 9, 8635632);
+	VALUES ('Mochila', 11),
+	('Celular', 22),
+	('Carro', 44),
+	('Bicicleta', 55),
+	('Carteira', 66),
+	('Joia', 77),
+	('Motocicleta', 88),
+	('Dinheiro', 99);
 
 	INSERT INTO TIPO_DE_CONTATO
 	VALUES (22, 'Telefone pessoal'),
@@ -492,221 +492,238 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(999768032, 885876, 34);
 
 	INSERT INTO ENTREGA
-	VALUES (785632, 1234565, 'Cariacica', 22567),
-	(198500, 0034565, 'Vila Velha', 90567),
-	(987438, 1234465, 'Vitória', 21260),
-	(794133, 3235585, 'Serra', 33569),
-	(634538, 1131515, 'Viana', 42761),
-	(499876, 1234565, 'Cariacica', 42509),
-	(235500, 0230565, 'Vitória', 02067),
-	(885876, 3235585, 'Serra', 62567);
+	VALUES (1234565, 435876, 0067, 997, 900),
+	(1131515, 678123, 9045, 90567, 776),
+	(1131515, 678123, 2211, 21260, 977),
+	(0034565, 885876, 5689, 33569, 214),
+	(3235585, 211000, 0955, 42761, 657),
+	(0230565, 845538, 1145, 42509, 768),
+	(1236566, 794133, 7800, 02067, 900),
+	(1236566, 194538, 4399, 62567, 970);
 
-#### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS
+	INSERT INTO possui
+	VALUES (9875632, 11),
+	(2987632, 22),
+	(6375212, 44),
+	(6375212, 22),
+	(1000332, 66),
+	(1000332, 99),
+	(1000332, 22),
+	(6307896, 55);
 	
-
+#### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELAS E INSERÇÃO DOS DADOS
 	CREATE TABLE PESSOA (
-	    Email VARCHAR,
 	    ID SERIAL PRIMARY KEY,
-	    Nome VARCHAR
+	    Nome VARCHAR(100)
 	);
 
 	CREATE TABLE ENDERECO (
-	    Tipo_logradouro VARCHAR,
-	    Cod_end SERIAL PRIMARY KEY,
-	    FK_MUNICIPIO_Cod_municipio INT,
+	    Tipo_logradouro VARCHAR(50),
+	    Cod_end INT PRIMARY KEY,
+	    FK_BAIRRO_Cod_bairro INT,
 	    FK_Logradouro_Cod_logradouro INT
 	);
 
 	CREATE TABLE MUNICIPIO (
-	    Cod_municipio INT PRIMARY KEY,
-	    Nome_municipio VARCHAR,
-	    FK_BAIRRO_Cod_bairro INT
+	    Nome_municipio VARCHAR(50),
+	    Cod_municipio INT PRIMARY KEY
 	);
 
 	CREATE TABLE BOLETIM (
 	    Data_roubo DATE,
 	    Hora_roubo TIME,
-	    ID SERIAL PRIMARY KEY,
-	    Cod_tipo INT,
-	    Cod_item INT,
-	    FK_ENDERECO_Cod_end SERIAL,
+	    ID INT PRIMARY KEY,
+	    FK_TIPO_ROUBO_Cod_tipo INT,
+	    FK_ENDERECO_Cod_end INT,
 	    FK_PESSOA_ID SERIAL
 	);
 
 	CREATE TABLE BAIRRO (
+	    Nome_bairro VARCHAR(80),
 	    Cod_bairro INT PRIMARY KEY,
-	    Nome_bairro VARCHAR
+	    FK_MUNICIPIO_Cod_municipio INT
 	);
 
 	CREATE TABLE FISICA (
-	    Sexo CHAR,
-	    CPF VARCHAR,
+	    Sexo CHAR(1),
+	    CPF VARCHAR(15),
 	    FK_PESSOA_ID SERIAL PRIMARY KEY
 	);
 
 	CREATE TABLE JURIDICA (
-	    CNPJ VARCHAR,
+	    CNPJ VARCHAR(50),
 	    FK_PESSOA_ID SERIAL PRIMARY KEY
 	);
 
 	CREATE TABLE CLIENTE (
-	    Senha VARCHAR,
+	    Senha VARCHAR(20),
 	    FK_PESSOA_ID SERIAL PRIMARY KEY
 	);
 
 	CREATE TABLE TIPO_ROUBO (
-	    Tipo VARCHAR,
-	    Cod_tipo SERIAL PRIMARY KEY,
-	    FK_BOLETIM_ID SERIAL
+	    Tipo VARCHAR(50),
+	    Cod_tipo INT PRIMARY KEY
 	);
 
 	CREATE TABLE ITEM_ROUBO (
-	    Item VARCHAR,
-	    Cod_item SERIAL PRIMARY KEY,
-	    FK_BOLETIM_ID SERIAL
+	    Item VARCHAR(50),
+	    Cod_item INT PRIMARY KEY
 	);
 
 	CREATE TABLE Logradouro (
 	    Cod_logradouro INT PRIMARY KEY,
-	    Tipo_logradouro VARCHAR
+	    Tipo_logradouro VARCHAR(50)
 	);
 
 	CREATE TABLE CONTATO (
-	    Contato_cliente VARCHAR,
+	    Contato_cliente VARCHAR(50),
 	    FK_PESSOA_ID SERIAL,
-	    FK_TIPO_DE_CONTATO_Cod_tipo_contato VARCHAR
+	    FK_TIPO_DE_CONTATO_Cod_tipo_contato INT
 	);
 
 	CREATE TABLE TIPO_DE_CONTATO (
-	    Cod_tipo_contato VARCHAR PRIMARY KEY,
-	    Tipo_contato VARCHAR
+	    Cod_tipo_contato INT PRIMARY KEY,
+	    Tipo_contato VARCHAR(50)
+	);
+
+	CREATE TABLE Possui (
+	    FK_BOLETIM_ID INT,
+	    FK_ITEM_ROUBO_Cod_item INT
 	);
 
 	CREATE TABLE ENTREGA (
-	    FK_PESSOA_ID SERIAL,
-	    FK_ENDERECO_Cod_end SERIAL,
-	    Destino_entrega VARCHAR,
-	    Cod_entrega SERIAL PRIMARY KEY
+	    FK_ENDERECO_Cod_end INT,
+	    FK_CLIENTE_FK_PESSOA_ID SERIAL,
+	    Cod_entrega INT PRIMARY KEY,
+	    cod_origem INT,
+	    cod_destino INT
 	);
 
-	ALTER TABLE ENDERECO ADD CONSTRAINT FK_ENDERECO_2
-	    FOREIGN KEY (FK_MUNICIPIO_Cod_municipio)
-	    REFERENCES MUNICIPIO (Cod_municipio)
-	    ON DELETE RESTRICT;
-
-	ALTER TABLE ENDERECO ADD CONSTRAINT FK_ENDERECO_3
-	    FOREIGN KEY (FK_Logradouro_Cod_logradouro)
-	    REFERENCES Logradouro (Cod_logradouro)
-	    ON DELETE RESTRICT;
-
-	ALTER TABLE MUNICIPIO ADD CONSTRAINT FK_MUNICIPIO_2
+	ALTER TABLE ENDERECO ADD CONSTRAINT FK_ENDERECO_1
 	    FOREIGN KEY (FK_BAIRRO_Cod_bairro)
 	    REFERENCES BAIRRO (Cod_bairro)
-	    ON DELETE RESTRICT;
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+	ALTER TABLE ENDERECO ADD CONSTRAINT FK_ENDERECO_2
+	    FOREIGN KEY (FK_Logradouro_Cod_logradouro)
+	    REFERENCES Logradouro (Cod_logradouro)
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+	ALTER TABLE BOLETIM ADD CONSTRAINT FK_BOLETIM_1
+	    FOREIGN KEY (FK_TIPO_ROUBO_Cod_tipo)
+	    REFERENCES TIPO_ROUBO (Cod_tipo)
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 	ALTER TABLE BOLETIM ADD CONSTRAINT FK_BOLETIM_2
 	    FOREIGN KEY (FK_ENDERECO_Cod_end)
 	    REFERENCES ENDERECO (Cod_end)
-	    ON DELETE CASCADE;
+	    ON DELETE CASCADE ON UPDATE CASCADE;
 
 	ALTER TABLE BOLETIM ADD CONSTRAINT FK_BOLETIM_3
 	    FOREIGN KEY (FK_PESSOA_ID)
 	    REFERENCES PESSOA (ID)
-	    ON DELETE RESTRICT;
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-	ALTER TABLE FISICA ADD CONSTRAINT FK_FISICA_2
+	ALTER TABLE BAIRRO ADD CONSTRAINT FK_BAIRRO_1
+	    FOREIGN KEY (FK_MUNICIPIO_Cod_municipio)
+	    REFERENCES MUNICIPIO (Cod_municipio)
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+	ALTER TABLE FISICA ADD CONSTRAINT FK_FISICA_1
 	    FOREIGN KEY (FK_PESSOA_ID)
 	    REFERENCES PESSOA (ID)
-	    ON DELETE CASCADE;
+	    ON DELETE CASCADE ON UPDATE CASCADE;
 
-	ALTER TABLE JURIDICA ADD CONSTRAINT FK_JURIDICA_2
+	ALTER TABLE JURIDICA ADD CONSTRAINT FK_JURIDICA_1
 	    FOREIGN KEY (FK_PESSOA_ID)
 	    REFERENCES PESSOA (ID)
-	    ON DELETE CASCADE;
+	    ON DELETE CASCADE ON UPDATE CASCADE;
 
-	ALTER TABLE CLIENTE ADD CONSTRAINT FK_CLIENTE_2
+	ALTER TABLE CLIENTE ADD CONSTRAINT FK_CLIENTE_1
 	    FOREIGN KEY (FK_PESSOA_ID)
 	    REFERENCES PESSOA (ID)
-	    ON DELETE CASCADE;
+	    ON DELETE CASCADE ON UPDATE CASCADE;
 
-	ALTER TABLE TIPO_ROUBO ADD CONSTRAINT FK_TIPO_ROUBO_2
-	    FOREIGN KEY (FK_BOLETIM_ID)
-	    REFERENCES BOLETIM (ID)
-	    ON DELETE CASCADE;
-
-	ALTER TABLE ITEM_ROUBO ADD CONSTRAINT FK_ITEM_ROUBO_2
-	    FOREIGN KEY (FK_BOLETIM_ID)
-	    REFERENCES BOLETIM (ID)
-	    ON DELETE CASCADE;
+	ALTER TABLE CONTATO ADD CONSTRAINT FK_CONTATO_0
+	    FOREIGN KEY (FK_PESSOA_ID)
+	    REFERENCES PESSOA (ID)
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 	ALTER TABLE CONTATO ADD CONSTRAINT FK_CONTATO_1
-	    FOREIGN KEY (FK_PESSOA_ID)
-	    REFERENCES PESSOA (ID)
-	    ON DELETE RESTRICT;
-
-	ALTER TABLE CONTATO ADD CONSTRAINT FK_CONTATO_2
 	    FOREIGN KEY (FK_TIPO_DE_CONTATO_Cod_tipo_contato)
 	    REFERENCES TIPO_DE_CONTATO (Cod_tipo_contato)
-	    ON DELETE CASCADE;
+	    ON DELETE CASCADE ON UPDATE CASCADE;
 
-	ALTER TABLE ENTREGA ADD CONSTRAINT FK_ENTREGA_2
-	    FOREIGN KEY (FK_PESSOA_ID)
-	    REFERENCES PESSOA (ID)
-	    ON DELETE RESTRICT;
+	ALTER TABLE Possui ADD CONSTRAINT FK_Possui_0
+	    FOREIGN KEY (FK_BOLETIM_ID)
+	    REFERENCES BOLETIM (ID)
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-	ALTER TABLE ENTREGA ADD CONSTRAINT FK_ENTREGA_3
+	ALTER TABLE Possui ADD CONSTRAINT FK_Possui_1
+	    FOREIGN KEY (FK_ITEM_ROUBO_Cod_item)
+	    REFERENCES ITEM_ROUBO (Cod_item)
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+	ALTER TABLE ENTREGA ADD CONSTRAINT FK_ENTREGA_1
 	    FOREIGN KEY (FK_ENDERECO_Cod_end)
 	    REFERENCES ENDERECO (Cod_end)
-	    ON DELETE SET NULL;
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+	ALTER TABLE ENTREGA ADD CONSTRAINT FK_ENTREGA_2
+	    FOREIGN KEY (FK_CLIENTE_FK_PESSOA_ID)
+	    REFERENCES CLIENTE (FK_PESSOA_ID)
+	    ON DELETE RESTRICT ON UPDATE RESTRICT;	
+
 	
-	
+	/* Inserção dos dados */
 	
 	INSERT INTO PESSOA
-	VALUES ('patricia.lima@hotmail.com', 194538, 'Patricia Lima'),
-	('luciana_almeida@hotmail.com', 785632, 'Luciana Fernandes'),
-	('pablorodrigues@gmail.com', 198500,  'Pablo Rodrigues'),
-	('rodrigoxavier12@bol.com', 987438, 'Rodrigo Xavier'),
-	('jose_almeida@hotmail.com', 693238,  'José Luiz'),
-	('guilherme.souza@gmail.com', 794133, 'Guilhermede Souza'),
-	('analopez@hotmail.com', 824530, 'Ana Luiza Lopes'),
-	('ada.lima@gmail.com', 634538, 'Ada Lima'),
-	('filipebarcelos@hotmail.com', 621548, 'Filipe Barcelos'),
-	('luana_aragao@gmail.com', 845538, 'Luana Aragão'),
-	('lali_magazine@lali.com', 435876, 'Lali Magazine'),
-	('livraria@livraria.com.br', 678123, 'Livraria Livros'),
-	('eletronicos@eletronicos.com', 234000, 'Eletrônica El'), 
-	('comercial@comercial.com', 885876, 'Comercial Pereira'),
-	('cosmeticosbia@cosmeticosbia.com.br', 228123, 'Bia Cosméticos'),
-	('moveis@moveismol.com', 211000, 'Moveis MOl'),
-	('Vinhosxc@hotmail.com', 400876, 'Vinhos XC'),
-	('livrarialemos@gmail.com.br', 678003, 'Livraria Lemos'),
-	('eletronicos123@eletronicos.com', 235500, 'Eletrônica 123'),
-	('lojas@gmail.com', 499876, 'Loja da Maria');
-
-	INSERT INTO BAIRRO
-	VALUES (000123, 'Coqueiral'),
-	(698623, 'Manguinhos'),
-	(000666, 'Campo Grande'),
-	(603203, 'Jardim América'),
-	(055423, 'Jacaraipe'),
-	(003130, 'Lanranjeiras'),
-	(204403, 'Morada'),
-	(002423, 'Mata da Praia'),
-	(003323, 'Santa Cruz'),
-	(130123, 'Centro'),
-	(098765, 'Campinho');
+	VALUES (194538, 'Patricia Lima'),
+	(785632, 'Luciana Fernandes'),
+	(198500,  'Pablo Rodrigues'),
+	(987438, 'Rodrigo Xavier'),
+	(693238,  'José Luiz'),
+	(794133, 'Guilhermede Souza'),
+	(824530, 'Ana Luiza Lopes'),
+	(634538, 'Ada Lima'),
+	(621548, 'Filipe Barcelos'),
+	(845538, 'Luana Aragão'),
+	(435876, 'Lali Magazine'),
+	(678123, 'Livraria Livros'),
+	(234000, 'Eletrônica El'), 
+	(885876, 'Comercial Pereira'),
+	(228123, 'Bia Cosméticos'),
+	(211000, 'Moveis MOl'),
+	(400876, 'Vinhos XC'),
+	(678003, 'Livraria Lemos'),
+	(235500, 'Eletrônica 123'),
+	(499876, 'Loja da Maria');
 
 	INSERT INTO MUNICIPIO
-	VALUES (532066, 'Cariacica', 000666), 
-	(830066, 'Viana', 204403),
-	(532666, 'Vila Velha', 000123),
-	(032000, 'Santa Tereza', 204403),
-	(100066, 'Vitória', 002423),
-	(738886, 'Marechal Floriano', 003323),
-	(123466, 'Domingos Martins', 098765),
-	(532088, 'Serra', 698623),
-	(112776, 'Aracruz', 003323),
-	(532444, 'Fundão', 130123);
+	VALUES ('Cariacica', 532066), 
+	('Viana', 830066),
+	('Vila Velha', 532666),
+	('Santa Tereza', 032000),
+	('Vitória', 100066),
+	('Marechal Floriano', 738886),
+	('Domingos Martins', 123466),
+	('Serra', 532088),
+	('Aracruz', 112776),
+	('Fundão', 532444);
+
+
+	INSERT INTO BAIRRO
+	VALUES ('Coqueiral', 000123, 532666),
+	('Manguinhos', 698623, 532088),
+	('Campo Grande', 000666, 532066),
+	('Jardim América', 603203, 532066),
+	('Jacaraipe', 055423, 532088),
+	('Lanranjeiras', 003130, 532088),
+	('Morada', 204403, 532444),
+	('Mata da Praia', 002423, 100066),
+	('Santa Cruz', 003323, 112776),
+	('Centro', 130123, 100066),
+	('Campinho', 098765, 123466);
 
 	INSERT INTO LOGRADOURO
 	VALUES (081, 'Rua'),
@@ -721,28 +738,32 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(036, 'Reta');
 
 	INSERT INTO ENDERECO
-	VALUES ('rua', 1234565, 532066, 081),                           
-	('rua', 1131515, 830066, 081),
-	('avenida', 0034565, 532666, 008),
-	('rodovia', 1224565, 032000, 090),
-	('escada', 1234465, 100066, 030),
-	('estrada', 1234555, 123466, 031),
-	('rua', 3235585, 532088, 081),
-	('avenida', 7234765, 532666, 081),
-	('rua', 0230565, 100066, 081),
-	('rua', 1236566, 100066, 081);
+	VALUES ('rua', 1234565, 000123, 081),                           
+	('rua', 1131515, 698623, 081),
+	('avenida', 0034565, 000666, 008),
+	('rodovia', 1224565, 003130, 090),
+	('escada', 1234465, 130123, 030),
+	('estrada', 1234555, 098765, 031),
+	('rua', 3235585, 000666, 081),
+	('avenida', 7234765, 003323, 081),
+	('rua', 0230565, 603203, 081),
+	('rua', 1236566, 002423, 081);
+
+	INSERT INTO TIPO_ROUBO
+	VALUES ('Roubo', 1),
+	('Furto', 2);
 
 	INSERT INTO BOLETIM
-	VALUES ('2018/06/30', '15:43:43', 9875632, 1, 2, 1234565, 194538),
-	('2018/06/28', '15:50:00', 2987632, 1, 1, 1131515, 785632),
-	('2016/08/02', '17:21:12', 6375212, 2, 5, 1131515, 987438),
-	('2018/06/30', '13:43:32', 2375032, 1, 8, 0034565, 198500),
-	('2018/07/26', '09:52:00', 6300632, 2, 4, 3235585, 693238),
-	('2017/03/13', '08:00:09', 1000332, 1, 4, 1234555, 794133),
-	('2018/01/25', '10:00:52', 8635632, 1, 9, 1234465, 824530),
-	('2017/06/30', '19:10:47', 9870232, 1, 7, 1236566, 824530),
-	('2018/09/17', '18:30:20', 9878432, 2, 5, 7234765, 634538),
-	('2018/09/27', '14:00:00', 6307896, 1, 6, 0230565, 621548);
+	VALUES ('2018/06/30', '15:43:43', 9875632, 1, 1234565, 194538),
+	('2018/06/28', '15:50:00', 2987632, 1, 1234565, 785632),
+	('2016/08/02', '17:21:12', 6375212, 2, 7234765, 785632),
+	('2018/06/30', '13:43:32', 2375032, 1, 3235585, 198500),
+	('2018/07/26', '09:52:00', 6300632, 2, 7234765, 794133),
+	('2017/03/13', '08:00:09', 1000332, 1, 7234765, 824530),
+	('2018/01/25', '10:00:52', 8635632, 1, 0230565, 693238),
+	('2017/06/30', '19:10:47', 9870232, 1, 0230565, 845538),
+	('2018/09/17', '18:30:20', 9878432, 2, 1234565, 634538),
+	('2018/09/27', '14:00:00', 6307896, 1, 1234565, 621548);
 
 	INSERT INTO FISICA
 	VALUES('F', '12345678901', 194538),
@@ -779,19 +800,15 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	('123456', 693238),
 	('gt5tu1', 194538);
 
-	INSERT INTO TIPO_ROUBO
-	VALUES ('Roubo', 1, 9875632),
-	('Furto', 2, 6375212);
-
 	INSERT INTO ITEM_ROUBO
-	VALUES ('Mochila', 1, 2987632),
-	('Celular', 2, 9875632),
-	('Carro', 4, 6300632),
-	('Bicicleta', 5, 6375212),
-	('Carteira', 6, 6307896),
-	('Joia', 7, 9870232),
-	('Motocicleta', 8, 2375032),
-	('Dinheiro', 9, 8635632);
+	VALUES ('Mochila', 11),
+	('Celular', 22),
+	('Carro', 44),
+	('Bicicleta', 55),
+	('Carteira', 66),
+	('Joia', 77),
+	('Motocicleta', 88),
+	('Dinheiro', 99);
 
 	INSERT INTO TIPO_DE_CONTATO
 	VALUES (22, 'Telefone pessoal'),
@@ -812,14 +829,24 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(999768032, 885876, 34);
 
 	INSERT INTO ENTREGA
-	VALUES (785632, 1234565, 'Cariacica', 22567),
-	(198500, 0034565, 'Vila Velha', 90567),
-	(987438, 1234465, 'Vitória', 21260),
-	(794133, 3235585, 'Serra', 33569),
-	(634538, 1131515, 'Viana', 42761),
-	(499876, 1234565, 'Cariacica', 42509),
-	(235500, 0230565, 'Vitória', 02067),
-	(885876, 3235585, 'Serra', 62567);
+	VALUES (1234565, 435876, 0067, 997, 900),
+	(1131515, 678123, 9045, 90567, 776),
+	(1131515, 678123, 2211, 21260, 977),
+	(0034565, 885876, 5689, 33569, 214),
+	(3235585, 211000, 0955, 42761, 657),
+	(0230565, 845538, 1145, 42509, 768),
+	(1236566, 794133, 7800, 02067, 900),
+	(1236566, 194538, 4399, 62567, 970);
+
+	INSERT INTO possui
+	VALUES (9875632, 11),
+	(2987632, 22),
+	(6375212, 44),
+	(6375212, 22),
+	(1000332, 66),
+	(1000332, 99),
+	(1000332, 22),
+	(6307896, 55);
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
 	/* EXCLUSÃO DE DADOS - DROP */
