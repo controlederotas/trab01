@@ -1196,43 +1196,46 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_bairro.png)
 	
 	SELECT * FROM boletim
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/boletim.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_boletim.png)
 
 	SELECT * FROM cliente
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/cliente.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_cliente)
 
 	SELECT * FROM contato
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/contato.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_contato.png)
 
 	SELECT * FROM endereco
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/endereco.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_endereco.png)
 
 	SELECT * FROM entrega
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/entrega.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_entrega.png)
 
 	SELECT * FROM fisica
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/fisica.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tabela_fisica.png)
 
 	SELECT * FROM item_roubo
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/item_roubo.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tabela_item_roubo.png)
 
 	SELECT * FROM juridica
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/juridica.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_juridica.png)
 
 	SELECT * FROM logradouro
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/logradouro.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_logradouro.png)
 
 	SELECT * FROM municipio
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/municipio.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela-municipio.png)
 
 	SELECT * FROM pessoa
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/pessoa.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_pessoa.png)
 
 	SELECT * FROM tipo_de_contato
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tipo_de_contato.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_tipo_de_contato.png)
 
 	SELECT * FROM tipo_roubo
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tipo_roubo.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_tipo_roubo.png)
+
+	SELECT * FROM possui
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_possui.png)
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 	SELECT * FROM bairro WHERE nome_bairo = 'Campo Grande'
