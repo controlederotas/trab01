@@ -1211,10 +1211,10 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_entrega.png)
 
 	SELECT * FROM fisica
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tabela_fisica.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_fisica.png)
 
 	SELECT * FROM item_roubo
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tabela_item_roubo.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_item_roubo.png)
 
 	SELECT * FROM juridica
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_juridica.png)
