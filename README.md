@@ -1239,7 +1239,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 	SELECT * FROM bairro WHERE nome_bairo = 'Campo Grande'
-![Alt text](https://github.com/controlederotas/trab01/blob/master/9.2/consulta1_9.2)
+![Alt text](https://github.com/controlederotas/trab01/9.2/consulta1_9.2.png)
 
 	SELECT * FROM entrega WHERE destino_entrega = 'Cariacica'
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/9.2/consulta2_9.2)
