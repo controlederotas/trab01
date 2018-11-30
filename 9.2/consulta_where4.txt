@@ -1,0 +1,8 @@
+SELECT * FROM bairro WHERE nome_bairro = 'Campo Grande'; ? Consulta 1
+
+SELECT * FROM entrega WHERE cod_destino = 900; ? Consulta 2
+ 
+Consulta 3 ? Manter a mesma.
+
+Consulta 4 ? Manter a mesma
+
