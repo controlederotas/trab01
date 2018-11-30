@@ -1193,7 +1193,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 	SELECT * FROM bairro
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/bairro.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_bairro.png)
 	
 	SELECT * FROM boletim
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/boletim.png)
