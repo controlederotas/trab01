@@ -1,0 +1,15 @@
+Consulta 1 ? MANTER A MESMA 
+
+Consulta 2 ? SELECT * FROM pessoa WHERE nome LIKE '%s'; - MUDAR FOTO
+
+Consulta 3 ? SELECT * FROM bairro WHERE nome_bairro LIKE '______'; - MUDAR FOTO
+
+Consulta 4 ? SELECT * FROM bairro WHERE nome_bairro LIKE '_a%' - MUDAR FOTO
+
+Consulta 5 ? SELECT * FROM pessoa WHERE nome LIKE '%ana%'; - MUDAR FOTO
+
+Consulta 6 ? SELECT contato_cliente, CURRENT_TIME FROM contato WHERE fk_pessoa_id = 785632;
+
+Consulta 7 ? SELECT contato_cliente, now() FROM contato WHERE fk_pessoa_id = 785632;
+
+Consulta 8 ? SELECT contato_cliente, CURRENT_DATE FROM contato WHERE fk_pessoa_id = 198500;
