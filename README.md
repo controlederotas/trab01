@@ -1300,6 +1300,15 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	SELECT contato_cliente, CURRENT_DATE FROM contato WHERE fk_pessoa_id = 198500;
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta8_9.4.png)
 
+	SELECT *, age(current_date, data_roubo) FROM boletim;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta10_9.4.png)
+
+	SELECT id AS Id_roubo, extract('year' from data_roubo) AS Ano, extract('month' from data_roubo) AS Mes FROM boletim;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta11_9.4.png)
+
+	SELECT id, DATE_PART('year',(age(current_date,data_roubo))) AS Anos_roubo FROM boletim;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta12_9.4.png)
+
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
 >## Marco de Entrega 04 em: (18/10/2017)<br>
