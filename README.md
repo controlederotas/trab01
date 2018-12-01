@@ -1270,11 +1270,11 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 
 	SELECT * FROM entrega WHERE cod_entrega > 7700 AND cod_destino = 900;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/9.3/consulta5_9.3.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.3/Consulta5_9.3.png)
 
 
 	SELECT * FROM boletim WHERE hora_roubo > '15:00:00' AND id > 1000000;
-![Alt text](https://github.com/controlederotas/trab01/blob/master/9.3/consulta6_9.3.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.3/Consulta6_9.3.png)
 
 
 	SELECT data_roubo FROM boletim WHERE fk_tipo_roubo_cod_tipo = 1 OR hora_roubo < '15:00:00';
