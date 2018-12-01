@@ -1299,27 +1299,33 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
-    b) Criar uma consulta para cada tipo de função data apresentada.
-    
+
 	SELECT * FROM pessoa WHERE nome LIKE 'A%';
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_1.png)
 
 	SELECT * FROM pessoa WHERE nome LIKE '%s';
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_2.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta2_9.4.png)
 
 	SELECT * FROM bairro WHERE nome_bairro LIKE '______';
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_3.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta3_9.4.png)
 
 	SELECT * FROM bairro WHERE nome_bairro LIKE '_a%'
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_4.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta4_9.4.png)
 
 	SELECT * FROM pessoa WHERE nome LIKE '%ana%';
-![Alt text](https://github.com/controlederotas/trab01/blob/master/images/like_5.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta5_9.4.png)
 
 	SELECT id, current_date - data_roubo as "tempo em dias registro BO" FROM boletim 
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/data_1.png)
 
+	SELECT contato_cliente, CURRENT_TIME FROM contato WHERE fk_pessoa_id = 785632;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta6_9.4.png)
+
+	SELECT contato_cliente, now() FROM contato WHERE fk_pessoa_id = 785632;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta7_9.4.png)
+
+	SELECT contato_cliente, CURRENT_DATE FROM contato WHERE fk_pessoa_id = 198500;
+![Alt text](https://github.com/controlederotas/trab01/blob/master/9.4/Consulta8_9.4.png)
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
