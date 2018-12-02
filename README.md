@@ -223,7 +223,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	    Tipo_contato VARCHAR(50)
 	);
 
-	CREATE TABLE Possui (
+	CREATE TABLE POSSUI (
 	    FK_BOLETIM_ID INT,
 	    FK_ITEM_ROUBO_Cod_item INT
 	);
@@ -291,12 +291,12 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	    REFERENCES TIPO_DE_CONTATO (Cod_tipo_contato)
 	    ON DELETE CASCADE ON UPDATE CASCADE;
 
-	ALTER TABLE Possui ADD CONSTRAINT FK_Possui_0
+	ALTER TABLE POSSUI ADD CONSTRAINT FK_Possui_0
 	    FOREIGN KEY (FK_BOLETIM_ID)
 	    REFERENCES BOLETIM (ID)
 	    ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-	ALTER TABLE Possui ADD CONSTRAINT FK_Possui_1
+	ALTER TABLE POSSUI ADD CONSTRAINT FK_Possui_1
 	    FOREIGN KEY (FK_ITEM_ROUBO_Cod_item)
 	    REFERENCES ITEM_ROUBO (Cod_item)
 	    ON DELETE RESTRICT ON UPDATE RESTRICT;
@@ -354,7 +354,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	('Campo Grande', 000666, 532066),
 	('Jardim América', 603203, 532066),
 	('Jacaraipe', 055423, 532088),
-	('Lanranjeiras', 003130, 532088),
+	('Laranjeiras', 003130, 532088),
 	('Morada', 204403, 532444),
 	('Mata da Praia', 002423, 100066),
 	('Santa Cruz', 003323, 112776),
@@ -474,7 +474,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(1236566, 794133, 7800, 1234555, 1234465),
 	(1236566, 194538, 4399, 1224565, 1131515);
 
-	INSERT INTO possui
+	INSERT INTO POSSUI
 	VALUES (9875632, 11),
 	(2987632, 22),
 	(6375212, 44),
@@ -543,7 +543,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	    Cod_item INT PRIMARY KEY
 	);
 
-	CREATE TABLE Logradouro (
+	CREATE TABLE LOGRADOURO (
 	    Cod_logradouro INT PRIMARY KEY,
 	    Tipo_logradouro VARCHAR(50)
 	);
@@ -559,7 +559,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	    Tipo_contato VARCHAR(50)
 	);
 
-	CREATE TABLE Possui (
+	CREATE TABLE POSSUI (
 	    FK_BOLETIM_ID INT,
 	    FK_ITEM_ROUBO_Cod_item INT
 	);
@@ -627,12 +627,12 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	    REFERENCES TIPO_DE_CONTATO (Cod_tipo_contato)
 	    ON DELETE CASCADE ON UPDATE CASCADE;
 
-	ALTER TABLE Possui ADD CONSTRAINT FK_Possui_0
+	ALTER TABLE POSSUI ADD CONSTRAINT FK_Possui_0
 	    FOREIGN KEY (FK_BOLETIM_ID)
 	    REFERENCES BOLETIM (ID)
 	    ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-	ALTER TABLE Possui ADD CONSTRAINT FK_Possui_1
+	ALTER TABLE POSSUI ADD CONSTRAINT FK_Possui_1
 	    FOREIGN KEY (FK_ITEM_ROUBO_Cod_item)
 	    REFERENCES ITEM_ROUBO (Cod_item)
 	    ON DELETE RESTRICT ON UPDATE RESTRICT;
@@ -810,7 +810,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(1236566, 794133, 7800, 1234555, 1234465),
 	(1236566, 194538, 4399, 1224565, 1131515);
 
-	INSERT INTO possui
+	INSERT INTO POSSUI
 	VALUES (9875632, 11),
 	(2987632, 22),
 	(6375212, 44),
@@ -884,7 +884,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	    Cod_item INT PRIMARY KEY
 	);
 
-	CREATE TABLE Logradouro (
+	CREATE TABLE LOGRADOURO (
 	    Cod_logradouro INT PRIMARY KEY,
 	    Tipo_logradouro VARCHAR(50)
 	);
@@ -900,7 +900,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	    Tipo_contato VARCHAR(50)
 	);
 
-	CREATE TABLE Possui (
+	CREATE TABLE POSSUI (
 	    FK_BOLETIM_ID INT,
 	    FK_ITEM_ROUBO_Cod_item INT
 	);
@@ -968,12 +968,12 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	    REFERENCES TIPO_DE_CONTATO (Cod_tipo_contato)
 	    ON DELETE CASCADE ON UPDATE CASCADE;
 
-	ALTER TABLE Possui ADD CONSTRAINT FK_Possui_0
+	ALTER TABLE POSSUI ADD CONSTRAINT FK_Possui_0
 	    FOREIGN KEY (FK_BOLETIM_ID)
 	    REFERENCES BOLETIM (ID)
 	    ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-	ALTER TABLE Possui ADD CONSTRAINT FK_Possui_1
+	ALTER TABLE POSSUI ADD CONSTRAINT FK_Possui_1
 	    FOREIGN KEY (FK_ITEM_ROUBO_Cod_item)
 	    REFERENCES ITEM_ROUBO (Cod_item)
 	    ON DELETE RESTRICT ON UPDATE RESTRICT;
@@ -1151,7 +1151,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(1236566, 794133, 7800, 1234555, 1234465),
 	(1236566, 194538, 4399, 1224565, 1131515);
 
-	INSERT INTO possui
+	INSERT INTO POSSUI
 	VALUES (9875632, 11),
 	(2987632, 22),
 	(6375212, 44),
