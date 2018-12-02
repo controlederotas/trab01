@@ -1486,6 +1486,9 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
     a) deve ser realizado no formato "backup" 
         (Em Dump Options #1 Habilitar opções Don't Save Owner e Privilege)
     b) antes de postar o arquivo no git o mesmo deve ser testado/restaurado por outro grupo de alunos/dupla
+    
+![Backup controle de rotas]
+(https://github.com/controlederotas/trab01/blob/master/arquivos/backup_controle_de_rotas.backup?raw=true "Backup - controle de rotas")
     c) informar aqui o grupo de alunos/dupla que realizou o teste.
 
 ### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
