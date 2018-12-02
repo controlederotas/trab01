@@ -155,7 +155,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	);
 
 	CREATE TABLE ENDERECO (
-	    Tipo_logradouro VARCHAR(50),
+	    Nome_end VARCHAR(100),
 	    Cod_end INT PRIMARY KEY,
 	    FK_BAIRRO_Cod_bairro INT,
 	    FK_Logradouro_Cod_logradouro INT
@@ -491,7 +491,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	);
 
 	CREATE TABLE ENDERECO (
-	    Tipo_logradouro VARCHAR(50),
+	    Nome_end VARCHAR(100),
 	    Cod_end INT PRIMARY KEY,
 	    FK_BAIRRO_Cod_bairro INT,
 	    FK_Logradouro_Cod_logradouro INT
@@ -832,7 +832,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	);
 
 	CREATE TABLE ENDERECO (
-	    Tipo_logradouro VARCHAR(50),
+	    Nome_end VARCHAR(100),
 	    Cod_end INT PRIMARY KEY,
 	    FK_BAIRRO_Cod_bairro INT,
 	    FK_Logradouro_Cod_logradouro INT
