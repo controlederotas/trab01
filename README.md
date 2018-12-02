@@ -822,11 +822,26 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
 	/* EXCLUSÃO DE DADOS - DROP */
+	DROP TABLE pessoa CASCADE 
+	DROP TABLE endereco CASCADE
+	DROP TABLE municipio CASCADE
+	DROP TABLE bairro CASCADE
+	DROP TABLE boletim CASCADE
+	DROP TABLE cliente
+	DROP TABLE contato
+	DROP TABLE entrega 
+	DROP TABLE fisica 
+	DROP TABLE item_roubo CASCADE
+	DROP TABLE juridica
+	DROP TABLE tipo_roubo
+	DROP TABLE tipo_de_contato
+	DROP TABLE logradouro
+	DROP TABLE possui
 
 
 	/* MODELO FÍSICO */
 
-		CREATE TABLE PESSOA (
+	CREATE TABLE PESSOA (
 	    ID SERIAL PRIMARY KEY,
 	    Nome VARCHAR(100)
 	);
