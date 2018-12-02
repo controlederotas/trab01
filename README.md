@@ -1315,13 +1315,156 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
+	SELECT pessoa.nome, tipo, nome_bairro as bairro_roubo FROM pessoa
+	INNER JOIN boletim ON (boletim.FK_PESSOA_ID = pessoa.ID)
+	INNER JOIN cliente ON (pessoa.ID = cliente.FK_PESSOA_ID)
+	INNER JOIN entrega ON (cliente.FK_PESSOA_ID = entrega.FK_CLIENTE_FK_PESSOA_ID)
+	INNER JOIN endereco ON (endereco.cod_end = entrega.FK_ENDERECO_Cod_end)
+	INNER JOIN bairro ON (endereco.FK_BAIRRO_Cod_bairro = bairro.cod_bairro)
+	INNER JOIN municipio ON (bairro.FK_MUNICIPIO_Cod_municipio = municipio.cod_municipio)
+	INNER JOIN logradouro ON (endereco.FK_Logradouro_Cod_logradouro = logradouro.cod_logradouro)
+	INNER JOIN tipo_roubo ON (tipo_roubo.cod_tipo = boletim.FK_TIPO_ROUBO_Cod_tipo)
+	LEFT JOIN contato ON (pessoa.ID = contato.FK_PESSOA_ID)
+	LEFT JOIN tipo_de_contato ON (contato.FK_TIPO_DE_CONTATO_Cod_tipo_contato = tipo_de_contato.Cod_tipo_contato)
+	LEFT JOIN possui ON (possui.FK_BOLETIM_ID = boletim.ID)
+	LEFT JOIN item_roubo ON (possui.FK_ITEM_ROUBO_Cod_item = item_roubo.cod_item)
+	LEFT JOIN fisica ON (pessoa.ID = fisica.FK_PESSOA_ID)
+	LEFT JOIN juridica ON (pessoa.ID = juridica.FK_PESSOA_ID)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.6_1.png)
+
+
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+	SELECT item as itens_roubados FROM boletim
+	INNER JOIN  possui ON (possui.FK_BOLETIM_ID = boletim.id)
+	INNER JOIN item_roubo ON (possui.FK_ITEM_ROUBO_Cod_item = item_roubo.Cod_item)
+	ORDER BY item
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.6_2.png)
+
+	SELECT nome_bairro as bairros_assaltados FROM boletim
+	INNER JOIN endereco ON (boletim.FK_ENDERECO_Cod_end = endereco.cod_end)
+	INNER JOIN bairro ON (endereco.FK_BAIRRO_Cod_bairro = bairro.cod_bairro)
+	ORDER BY nome_bairro
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.6_3.png)
+
+	SELECT nome_municipio as municipios_assaltados FROM boletim
+	INNER JOIN endereco ON (boletim.FK_ENDERECO_Cod_end = endereco.cod_end)
+	INNER JOIN bairro ON (endereco.FK_BAIRRO_Cod_bairro = bairro.cod_bairro)
+	INNER JOIN municipio ON (bairro.FK_MUNICIPIO_Cod_municipio = municipio.cod_municipio)
+	ORDER BY nome_municipio
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.6_4.png)
+
+	SELECT tipo FROM boletim
+	INNER JOIN tipo_roubo ON (boletim.FK_TIPO_ROUBO_Cod_tipo = tipo_roubo.cod_tipo)
+	ORDER BY tipo
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.6_5.png)
+
+	SELECT nome_bairro as bairros_entrega FROM entrega
+	INNER JOIN endereco ON (entrega.FK_ENDERECO_Cod_end = endereco.cod_end)
+	INNER JOIN bairro ON (endereco.FK_BAIRRO_Cod_bairro = bairro.cod_bairro)
+	ORDER BY nome_bairro
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.6_6.png)
+
+	
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
+
+	SELECT data_roubo, COUNT(data_roubo) FROM boletim
+	GROUP BY data_roubo
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.7_1.png)
+
+	SELECT item, count(item) FROM boletim
+	INNER JOIN  possui ON (possui.FK_BOLETIM_ID = boletim.id)
+	INNER JOIN item_roubo ON (possui.FK_ITEM_ROUBO_Cod_item = item_roubo.Cod_item)
+	GROUP BY item
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.7_2.png)
+
+	SELECT nome_bairro, count(nome_bairro) FROM boletim
+	INNER JOIN endereco ON (boletim.FK_ENDERECO_Cod_end = endereco.cod_end)
+	INNER JOIN bairro ON (endereco.FK_BAIRRO_Cod_bairro = bairro.cod_bairro)
+	GROUP BY nome_bairro
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.7_3.png)
+
+	SELECT nome_municipio, count(nome_municipio) FROM boletim
+	INNER JOIN endereco ON (boletim.FK_ENDERECO_Cod_end = endereco.cod_end)
+	INNER JOIN bairro ON (endereco.FK_BAIRRO_Cod_bairro = bairro.cod_bairro)
+	INNER JOIN municipio ON (bairro.FK_MUNICIPIO_Cod_municipio = municipio.cod_municipio)
+	GROUP BY nome_municipio
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.7_4.png)
+
+	SELECT tipo, count(tipo) FROM boletim
+	INNER JOIN tipo_roubo ON (boletim.FK_TIPO_ROUBO_Cod_tipo = tipo_roubo.cod_tipo)
+	GROUP BY tipo
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.7_5.png)
+
+	SELECT nome, COUNT(nome) FROM pessoa
+	INNER JOIN cliente ON (pessoa.ID = cliente.FK_PESSOA_ID)
+	INNER JOIN entrega ON (entrega.FK_CLIENTE_FK_PESSOA_ID = pessoa.ID)
+	GROUP BY nome
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.7_6.png)
+
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
+	SELECT nome FROM boletim
+	INNER JOIN pessoa ON (pessoa.ID = boletim.FK_PESSOA_ID)
+	RIGHT JOIN fisica ON (pessoa.ID = fisica.FK_PESSOA_ID)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.8_1.png)
+
+	SELECT nome FROM fisica
+	LEFT JOIN pessoa ON (pessoa.ID = fisica.FK_PESSOA_ID)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.8_2.png)
+
+	SELECT nome FROM pessoa
+	RIGHT JOIN juridica ON (pessoa.ID = juridica.FK_PESSOA_ID)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.8_3.png)
+
+	SELECT nome FROM boletim
+	INNER JOIN pessoa ON (pessoa.ID = boletim.FK_PESSOA_ID)
+	RIGHT JOIN cliente ON (cliente.FK_PESSOA_ID = pessoa.ID)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.8_4.png)
+
+
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
         a) Uma junção que envolva Self Join
+	
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+	CREATE VIEW municipios_entregas as
+	SELECT Nome_municipio FROM municipio
+	
+	SELECT * FROM municipios_entregas
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.9_1.png)
+
+	CREATE VIEW id_clientes as
+	SELECT FK_PESSOA_ID FROM cliente
+	
+	SELECT * FROM id_clientes
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.9_2.png)
+
+	CREATE VIEW entregas as
+	SELECT FK_ENDERECO_Cod_end FROM entrega
+	
+	SELECT * FROM entregas
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.9_3.png)
+
+	CREATE VIEW contato_cliente  as
+	SELECT contato_cliente, cliente.FK_PESSOA_ID FROM contato
+	INNER JOIN cliente ON (cliente.FK_PESSOA_ID = contato.FK_PESSOA_ID)
+	
+	SELECT * FROM contato_cliente
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.9_4.png)
+
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
+	SELECT nome_bairro FROM bairro WHERE cod_bairro IN 
+	(SELECT FK_BAIRRO_Cod_bairro FROM endereco
+	INNER JOIN boletim ON
+	(endereco.Cod_end = boletim.FK_ENDERECO_Cod_end))
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.10_1.png)
+
+	 SELECT nome FROM pessoa WHERE pessoa.id IN
+	 (SELECT FK_PESSOA_ID FROM cliente)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.10_2.png)
+
+	 SELECT item FROM item_roubo WHERE cod_item IN
+	 (SELECT FK_ITEM_ROUBO_Cod_item FROM possui)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.10_3.png)
+
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 ### 11 Backup completo do banco de dados postgres 
