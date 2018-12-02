@@ -1172,7 +1172,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_boletim.png)
 
 	SELECT * FROM cliente
-![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_cliente)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tabela_cliente.png)
 
 	SELECT * FROM contato
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_contato.png)
@@ -1181,7 +1181,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_endereco.png)
 
 	SELECT * FROM entrega
-![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_entrega.png)
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/tabela_entrega.png)
 
 	SELECT * FROM fisica
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_fisica.png)
@@ -1211,11 +1211,11 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/tabela_possui.png)
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-	SELECT * FROM bairro WHERE nome_bairo = 'Campo Grande'
+	SELECT * FROM bairro WHERE nome_bairro = 'Campo Grande'
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/9.2/consulta1_9.2.png)
 
-	SELECT * FROM entrega WHERE destino_entrega = 'Cariacica'
-![Alt text](https://github.com/controlederotas/trab01/blob/master/9.2/consulta2_9.2.png)
+	SELECT * FROM fisica WHERE sexo = 'F'
+![Alt text](https://github.com/controlederotas/trab01/blob/master/images/9.2_2.png)
 
 	SELECT * FROM tipo_de_contato WHERE tipo_contato = 'Celular comercial'
 ![Alt text](https://github.com/controlederotas/trab01/blob/master/images/where_3.png)
