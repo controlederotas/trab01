@@ -1483,6 +1483,9 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 ### 11 Backup completo do banco de dados postgres 
+
+BACKUP ![clique aqui](https://github.com/controlederotas/trab01/blob/master/arquivos/backup_controle_de_rotas.backup?raw=true "BACKUP ")
+
     a) deve ser realizado no formato "backup" 
         (Em Dump Options #1 Habilitar opções Don't Save Owner e Privilege)
     b) antes de postar o arquivo no git o mesmo deve ser testado/restaurado por outro grupo de alunos/dupla
