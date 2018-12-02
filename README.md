@@ -374,16 +374,16 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(036, 'Reta');
 
 	INSERT INTO ENDERECO
-	VALUES ('rua', 1234565, 000123, 081),                           
-	('rua', 1131515, 698623, 081),
-	('avenida', 0034565, 000666, 008),
-	('rodovia', 1224565, 003130, 090),
-	('escada', 1234465, 130123, 030),
-	('estrada', 1234555, 098765, 031),
-	('rua', 3235585, 000666, 081),
-	('avenida', 7234765, 003323, 081),
-	('rua', 0230565, 603203, 081),
-	('rua', 1236566, 002423, 081);
+	VALUES ('Quatro', 1234565, 000123, 081),                           
+	('José abel de almeida', 1131515, 698623, 081),
+	('Leopoldina', 0034565, 000666, 008),
+	('ES-010', 1224565, 003130, 090),
+	('Prof.Baltazar', 1234465, 130123, 081),
+	('Principal', 1234555, 098765, 031),
+	('Francisco Alves', 3235585, 000666, 081),
+	('Brasil', 7234765, 003323, 081),
+	('Chile', 0230565, 603203, 081),
+	('Farid Salomão', 1236566, 002423, 081);
 
 	INSERT INTO TIPO_ROUBO
 	VALUES ('Roubo', 1),
@@ -710,16 +710,16 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(036, 'Reta');
 
 	INSERT INTO ENDERECO
-	VALUES ('rua', 1234565, 000123, 081),                           
-	('rua', 1131515, 698623, 081),
-	('avenida', 0034565, 000666, 008),
-	('rodovia', 1224565, 003130, 090),
-	('escada', 1234465, 130123, 030),
-	('estrada', 1234555, 098765, 031),
-	('rua', 3235585, 000666, 081),
-	('avenida', 7234765, 003323, 081),
-	('rua', 0230565, 603203, 081),
-	('rua', 1236566, 002423, 081);
+	VALUES ('Quatro', 1234565, 000123, 081),                           
+	('José abel de almeida', 1131515, 698623, 081),
+	('Leopoldina', 0034565, 000666, 008),
+	('ES-010', 1224565, 003130, 090),
+	('Prof.Baltazar', 1234465, 130123, 081),
+	('Principal', 1234555, 098765, 031),
+	('Francisco Alves', 3235585, 000666, 081),
+	('Brasil', 7234765, 003323, 081),
+	('Chile', 0230565, 603203, 081),
+	('Farid Salomão', 1236566, 002423, 081);
 
 	INSERT INTO TIPO_ROUBO
 	VALUES ('Roubo', 1),
@@ -1051,16 +1051,16 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 	(036, 'Reta');
 
 	INSERT INTO ENDERECO
-	VALUES ('rua', 1234565, 000123, 081),                           
-	('rua', 1131515, 698623, 081),
-	('avenida', 0034565, 000666, 008),
-	('rodovia', 1224565, 003130, 090),
-	('escada', 1234465, 130123, 030),
-	('estrada', 1234555, 098765, 031),
-	('rua', 3235585, 000666, 081),
-	('avenida', 7234765, 003323, 081),
-	('rua', 0230565, 603203, 081),
-	('rua', 1236566, 002423, 081);
+	VALUES ('Quatro', 1234565, 000123, 081),                           
+	('José abel de almeida', 1131515, 698623, 081),
+	('Leopoldina', 0034565, 000666, 008),
+	('ES-010', 1224565, 003130, 090),
+	('Prof.Baltazar', 1234465, 130123, 081),
+	('Principal', 1234555, 098765, 031),
+	('Francisco Alves', 3235585, 000666, 081),
+	('Brasil', 7234765, 003323, 081),
+	('Chile', 0230565, 603203, 081),
+	('Farid Salomão', 1236566, 002423, 081);
 
 	INSERT INTO TIPO_ROUBO
 	VALUES ('Roubo', 1),
