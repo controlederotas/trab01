@@ -36,6 +36,7 @@ A Controle de Rotas precisa inicialmente dos seguintes relatórios:
 * Relatório contendo origem e destino da mercadoria.
 * Relatório contendo tipo deroubo e itens furtados dos usuários.
  
+ https://github.com/controlederotas/trab01/blob/master/arquivos/trab_bd1_controle_de_rotas.ipynb
  
 #### 4.2 TABELA DE DADOS DO SISTEMA:
 A tabela macro contem algum dos itens que identificamos até agora, como é uma tabela inicial pode ser que tenha falta de muitos campos e afins, mas para efeito de comparação essa é a tabela incial e o que entendemos dela.
