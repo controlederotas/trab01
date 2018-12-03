@@ -1496,7 +1496,8 @@ BACKUP ![clique aqui](https://github.com/controlederotas/trab01/blob/master/arqu
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 
-A maior dificuldade inicial encontrada foi construir corretamento o modelo conceitual, visto que, sempre nos deparávamos com algum tipo de erro ou detalhes não muito esclarecidos para nosso tipo de problema. Outra dificuldade foi achar relações entre as tabelas que fossem importantes para o nosso trabalho. No final, vimos que muitas tabelas eram preenchidas somente por números que não contribuiam para realizar qualquer tipo de análise.
+  A maior dificuldade inicial encontrada foi construir corretamente o modelo conceitual, visto que sempre nos deparávamos com algum tipo de erro ou detalhes não muito esclarecidos para nosso tipo de problema. Pensamos que isto ocorreu por ser nossa primeira experiência com um banco de dados e, ao decorrer da disciplina, esclarecemos melhor os objetivos deste trabalho, refletindo na melhora do modelo conceitual. A melhora foi crucial e possibilitou uma visão mais clara, tanto do que a disciplina nos propõe, quanto uma visão otimizada e assertiva do Controle de Rotas.
+  Outra dificuldade encontrada foi encontrar relações entre as tabelas que fossem importantes para o nosso trabalho. Constatamos que esta dificuldade ocorreu por conta da inserção de variáveis desnecessárias ao projeto que, consequentemente, dificultava a "visão ampla" do proposito do banco de dados. Após a remoção destas variáveis, tivemos uma melhora considerável no relacionamento entre tabelas.
 
 
 >## Marco de Entrega Final em: (08/11/2018)<br>
