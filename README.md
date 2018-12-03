@@ -1486,7 +1486,7 @@ c) Coleta de dados de tabelas já existentes : Julgamos importante a coleta de d
 
 BACKUP ![clique aqui](https://github.com/controlederotas/trab01/blob/master/arquivos/backup_controle_de_rotas.backup?raw=true "BACKUP ")
  
-    c) informar aqui o grupo de alunos/dupla que realizou o teste.
+    Grupo que realizou teste de restauração: qr-bus (Ewerson Vieira, Giuliano de Paulo, Lorran Gabriel, Marcos Antônio)
 
 ### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
         a) Outros grupos deverão ser capazes de restaurar o banco 
