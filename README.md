@@ -1493,11 +1493,13 @@ BACKUP ![clique aqui](https://github.com/controlederotas/trab01/blob/master/arqu
     Grupo que realizou teste de restauração: qr-bus (Ewerson Vieira, Giuliano de Paulo, Lorran Gabriel, Marcos Antônio)
 
 ### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
-        a) Outros grupos deverão ser capazes de restaurar o banco 
-        b) executar todas as consultas presentes no trabalho
-        c) executar códigos que tenham sido construídos para o trabalho 
-        d) realizar qualquer procedimento executado pelo grupo que desenvolveu o trabalho
-        
+        1) Abra o pgadmin4 .
+        2) Crie uma nova base de dados com o nome desejado.
+        3) Com o botão direito do mouse clique em cima da nova base criada.
+        4) Escolha a opção restore.
+	5) Em filename procure o arquivo de backup (obs: baixe o arquivo de backup do banco no link do topíco 11).
+	6) Depois clique em restore.
+	
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 
   A maior dificuldade inicial encontrada foi construir corretamente o modelo conceitual, visto que sempre nos deparávamos com algum tipo de erro ou detalhes não muito esclarecidos para nosso tipo de problema. Pensamos que isto ocorreu por ser nossa primeira experiência com um banco de dados e, ao decorrer da disciplina, esclarecemos melhor os objetivos deste trabalho, refletindo na melhora do modelo conceitual. A melhora foi crucial e possibilitou uma visão mais clara, tanto do que a disciplina nos propõe, quanto uma visão otimizada e assertiva do Controle de Rotas.
